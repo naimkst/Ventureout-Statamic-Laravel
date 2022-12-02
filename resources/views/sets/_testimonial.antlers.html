@@ -1,0 +1,13 @@
+{{#
+	@name Testimonial Component
+#}}
+<!-- Template: sets/accordion -->
+<section class="text-white bg-blue-900 py-14 lg:py-24">
+    <div class="container">
+        <div class="relative pl-[90px] lg:w-9/12">
+            <span class="absolute top-0 left-0">{{ svg src="icon-quote" }}</span>
+            <p class="h2">{{ block.testimonial|nl2br }}</p>
+            <p class="mt-10 text-blue-300">{{ block.author }}</p>
+        </div>
+    </div>
+</section>

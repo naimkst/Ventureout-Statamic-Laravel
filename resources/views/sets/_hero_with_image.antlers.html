@@ -1,0 +1,13 @@
+<section class="relative py-32 text-white bg-blue-900">
+    <div class="absolute inset-0">
+        {{ responsive:block.image class="object-cover w-full h-full" }}
+    </div>
+
+    <div class="container relative pt-[76px]">
+        {{ if block.kicker }}
+            <p class="mb-4">{{ block.kicker }}</p>
+        {{ /if }}
+
+        <h1 class="mb-4 font-medium font-neo hero-large lg:w-8/12">{{ block.heading }}</h1>
+    </div>
+</section>

@@ -1,0 +1,12 @@
+<article class="flex flex-col overflow-hidden rounded-lg">
+    <div class="block h-[260px]">
+        {{ responsive:image class="object-cover w-full h-full" }}
+    </div>
+    <div class="flex flex-col h-full p-8 text-white bg-blue-700">
+        <h3 class="mb-6 text-base h5">
+            <a href="{{ url }}">{{ title }}</a>
+        </h3>
+        <p class="mb-8 small">{{ excerpt }}</p>
+        <p class="mt-auto font-bold text-right small "><a class="uppercase hover:underline text-mango" href="{{ url }}">Read More</a></p>
+    </div>
+</article>

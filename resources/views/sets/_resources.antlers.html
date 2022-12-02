@@ -1,0 +1,29 @@
+{{#
+	@name Resources Component
+#}}
+<!-- Template: sets/resources -->
+<section class="bg-pearl py-14 lg:py-24 accordions" id="{{ id ?? '' }}">
+    <div class="container">
+        <div class="mx-auto lg:w-8/12">
+            <h2 class="mb-7 lg:mb-10 font-permanent text-mango">{{ title }}</h2>
+
+            <div class="px-8 py-6 bg-white rounded-xl">
+                {{ if content }}
+                <div class="mb-8 rte">{{ content }}</div>
+                {{ /if }}
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+                    {{ downloads }}
+                        <a href="{{ download:url }}" class="flex items-center" download>
+                            {{ svg src="icon-download" }}
+                            <span class="ml-5 font-medium underline">
+                                {{ title }}
+                            </span>
+                        </a>
+                    {{ /downloads }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

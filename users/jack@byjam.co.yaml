@@ -1,0 +1,22 @@
+name: 'Jack Whiting'
+super: true
+id: 42b07598-d765-4485-b6fe-5fc6c6a9ee72
+password_hash: $2y$10$QlLQaMIJre3w/ex5dnuvre.YY8mMxjqFdRPwwvAb3rSwVTwncNVxW
+preferences:
+  collections:
+    faqs:
+      columns:
+        - title
+        - slug
+        - faq_category
+    articles:
+      columns:
+        - title
+        - slug
+        - published_at
+        - author
+    resources:
+      columns:
+        - title
+        - slug
+        - resource_category

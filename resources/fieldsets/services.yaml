@@ -1,0 +1,132 @@
+title: Services
+fields:
+  -
+    handle: heading
+    field:
+      input_type: text
+      antlers: false
+      display: Heading
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      validate:
+        - required
+  -
+    handle: excerpt
+    field:
+      antlers: false
+      display: Excerpt
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: services
+    field:
+      collapse: false
+      previews: true
+      sets:
+        service_card:
+          display: 'Service Card'
+          fields:
+            -
+              handle: title
+              field:
+                input_type: text
+                antlers: false
+                display: Title
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+                validate:
+                  - required
+            -
+              handle: excerpt
+              field:
+                antlers: false
+                display: Excerpt
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: link
+              field:
+                display: Link
+                type: link
+                icon: link
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: image
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: Image
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+                validate:
+                  - required
+                  - image
+      display: Services
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: text_alignment
+    field:
+      options:
+        left: Left
+        center: Center
+      inline: false
+      cast_booleans: false
+      default: left
+      display: 'Text Alignment'
+      type: radio
+      icon: radio
+      instructions: 'Controls the heading/excerpt text alignment above the service cards.'
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: background_colour
+    field:
+      options:
+        white: White
+        black: Black
+      inline: false
+      cast_booleans: false
+      default: white
+      display: 'Background Colour'
+      type: radio
+      icon: radio
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

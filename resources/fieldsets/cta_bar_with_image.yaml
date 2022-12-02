@@ -1,0 +1,52 @@
+title: 'CTA Bar (With Image)'
+fields:
+  -
+    handle: cta
+    field:
+      antlers: false
+      display: CTA
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      validate:
+        - required
+  -
+    import: buttons
+  -
+    handle: image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 1
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      validate:
+        - required
+        - image
+  -
+    handle: background_style
+    field:
+      options:
+        orange: Orange
+        black: Black
+      inline: true
+      cast_booleans: false
+      default: orange
+      display: 'Background Style'
+      type: radio
+      icon: radio
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

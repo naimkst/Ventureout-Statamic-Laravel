@@ -1,0 +1,21 @@
+title: Gallery
+fields:
+  -
+    handle: images
+    field:
+      mode: grid
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: Images
+      type: assets
+      icon: assets
+      instructions: 'Add your images here and they will be placed in a slider gallery.'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      validate:
+        - required
+        - image

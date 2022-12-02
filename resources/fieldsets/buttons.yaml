@@ -1,0 +1,70 @@
+title: Buttons
+fields:
+  -
+    handle: buttons
+    field:
+      collapse: false
+      previews: true
+      sets:
+        button:
+          display: Button
+          fields:
+            -
+              handle: link
+              field:
+                types:
+                  - asset
+                  - entry
+                  - custom
+                  - email
+                  - term
+                  - tel
+                  - url
+                newWindow: true
+                text: true
+                aria: false
+                append: false
+                display: Link
+                type: link_it
+                icon: external-link
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+                validate:
+                  - required
+                collections:
+                  - pages
+                  - articles
+            -
+              handle: colour
+              field:
+                options:
+                  black: Black
+                  orange: Orange
+                  white: White
+                multiple: false
+                max_items: 1
+                clearable: false
+                searchable: false
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                default: black
+                display: Colour
+                type: select
+                icon: select
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+                validate:
+                  - required
+      display: Buttons
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      max_sets: 2

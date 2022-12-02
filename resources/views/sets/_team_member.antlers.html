@@ -1,0 +1,53 @@
+{{#
+	@name Team Member
+#}}
+<!-- Template: sets/team_member -->
+<section class="py-14 lg:py-24 bg-pearl team-member">
+    <div class="container">
+        <div class="flex flex-wrap row">
+            <div class="w-full column mb-8 md:mb-0 md:w-4/12 {{ alignment == 'right' ? 'md:order-2' : '' }}">
+                {{ team_member.image }}
+                    {{ responsive:url class="w-full aspect-square rounded-xl" }}
+                {{ /team_member.image }}
+            </div>
+
+            <div class="w-full md:w-8/12 {{ alignment == 'right' ? 'md:order-1' : '' }}">
+                <div class="relative p-10 bg-white xl:py-16 xl:px-20 rounded-xl">
+                    <div class="absolute top-10 right-10 lg:top-[4.5rem] lg:right-16 flex space-x-3 text-blue-300">
+                        {{ if team_member.facebook_link }}
+                        <a href="{{ team_member.facebook_link }}" target="_blank" rel="noreferrer noopener" title="Link to {{ team_member.title }}'s Facebook" >
+                            {{ svg src="icon-facebook" class="mt-px transition hover:text-mango" }}
+                        </a>
+                        {{ /if }}
+
+                        {{ if team_member.instagram_link }}
+                        <a href="{{ team_member.instagram_link }}" target="_blank" rel="noreferrer noopener" title="Link to {{ team_member.title }}'s Instagram">
+                            {{ svg src="icon-instagram" class="transition hover:text-mango" }}
+                        </a>
+                        {{ /if }}
+                    </div>
+
+                    <h2 class="mb-5 text-mango font-permanent">
+                        {{ team_member.title }}
+                    </h2>
+
+                    {{ if team_member.job_title }}
+                        <h3 class="font-bold h5">
+                            {{ team_member.job_title }}
+                        </h3>
+                    {{ /if }}
+
+                    {{ if team_member.subtitle }}
+                        <p class="mt-1 font-medium small text-mango">
+                            {{ team_member.subtitle }}
+                        </p>
+                    {{ /if }}
+
+                    <div class="mt-5 rte">
+                        {{ team_member.content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

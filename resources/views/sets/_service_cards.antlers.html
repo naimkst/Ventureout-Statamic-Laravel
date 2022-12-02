@@ -1,0 +1,35 @@
+{{#
+	@name Service Cards
+#}}
+<!-- Template: sets/service_cards -->
+<section class="py-14 lg:py-24 {{ background_colour != 'white' ? 'text-white bg-blue-900' : 'bg-white' }}">
+    <div class="container">
+        <div class="mb-12 lg:mb-16 {{ text_alignment != 'left' ? 'lg:w-8/12 mx-auto text-center' : 'lg:w-6/12' }}">
+            <h2 id="carousel-title" class="mb-4 font-permanent">{{ heading }}</h2>
+            {{ if excerpt }}
+                <p>{{ excerpt }}</p>
+            {{ /if }}
+        </div>
+
+        <div class="static splide" aria-labelledby="carousel-title" x-data="serviceSlider" x-ref="slider">
+            <div class="overflow-visible splide__track" data-glide-el="track">
+                <ul class="splide__list">
+                    {{ services scope="item" }}
+                        <li class="splide__slide">
+                            {{ partial src="components/service_card" }}
+                        </li>
+                    {{ /services }}
+                </ul>
+            </div>
+
+            <div class="flex items-center gap-4 mt-10 splide__arrows">
+                <button class="relative flex items-center justify-center transition splide__arrow splide__arrow--prev">
+                    {{ svg:icon-arrow-left }}
+                </button>
+                <button class="relative flex items-center justify-center transition splide__arrow splide__arrow--next">
+                    {{ svg:icon-arrow-right }}
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

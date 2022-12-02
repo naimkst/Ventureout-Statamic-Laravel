@@ -1,0 +1,82 @@
+title: 'Text (With Video)'
+fields:
+  -
+    handle: heading
+    field:
+      input_type: text
+      antlers: false
+      display: Heading
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: content
+    field:
+      always_show_set_button: false
+      previews: true
+      buttons:
+        - h2
+        - h3
+        - h4
+        - bold
+        - italic
+        - color
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - anchor
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      antlers: false
+      remove_empty_nodes: false
+      display: Content
+      type: bard
+      icon: bard
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      validate:
+        - required
+      collapse: false
+  -
+    import: buttons
+  -
+    handle: video
+    field:
+      display: Video
+      type: video
+      icon: video
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      validate:
+        - required
+  -
+    handle: alignment
+    field:
+      options:
+        left: Left
+        right: Right
+      inline: false
+      cast_booleans: false
+      default: right
+      display: 'Video Alignment'
+      type: radio
+      icon: radio
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

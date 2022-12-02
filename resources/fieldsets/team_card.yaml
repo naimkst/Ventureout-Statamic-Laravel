@@ -1,0 +1,33 @@
+title: 'Team Card'
+fields:
+  -
+    handle: team_member
+    field:
+      max_items: 1
+      mode: default
+      create: true
+      display: 'Team Member'
+      type: entries
+      icon: entries
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      collections:
+        - team_members
+  -
+    handle: alignment
+    field:
+      options:
+        left: Left
+        right: Right
+      inline: true
+      cast_booleans: false
+      default: left
+      display: 'Image Alignment'
+      type: radio
+      icon: radio
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

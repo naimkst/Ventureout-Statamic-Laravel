@@ -1,0 +1,27 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: address
+        field:
+          antlers: false
+          display: Address
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: copyright_text
+        field:
+          input_type: text
+          antlers: false
+          display: 'Copyright Text'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false

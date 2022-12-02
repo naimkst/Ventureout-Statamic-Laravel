@@ -1,0 +1,22 @@
+{{#
+	@name Accordion Component
+	@desc Set used for accordions, including title and alpine js components.
+#}}
+<!-- Template: sets/accordion -->
+<section class="bg-pearl py-14 lg:py-24 accordions" id="{{ id ?? '' }}">
+    <div class="container">
+        <div class="mx-auto lg:w-8/12">
+            {{ if block.heading }}
+                <h2 class="mb-7 lg:mb-10 font-permanent ">{{ block.heading }}</h2>
+            {{ /if }}
+
+            <div x-data="{ active: 1 }" class="space-y-6">
+                {{ $loop = 0 }}
+                {{ accordions }}
+                    {{ $loop += 1 }}
+                    {{ partial:components/accordion_card :loop="$loop" :title="heading" }}
+                {{ /accordions }}
+            </div>
+        </div>
+    </div>
+</section>

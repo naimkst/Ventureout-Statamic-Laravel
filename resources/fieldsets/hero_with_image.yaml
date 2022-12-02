@@ -1,0 +1,47 @@
+title: 'Hero (With Image)'
+fields:
+  -
+    handle: kicker
+    field:
+      input_type: text
+      antlers: false
+      display: Kicker
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: heading
+    field:
+      input_type: text
+      antlers: false
+      display: Heading
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      validate:
+        - required
+  -
+    handle: image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 1
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      validate:
+        - required
+        - image

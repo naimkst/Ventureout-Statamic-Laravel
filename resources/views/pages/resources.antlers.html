@@ -1,0 +1,16 @@
+{{ partial:components/hero }}
+
+<div class="flex flex-wrap gap-6 px-4 my-8">
+    {{ taxonomy from="resource_category" }}
+        {{ $href = '#' + slug }}
+        {{ partial src="components/buttons/secondary" :href="$href" :text="title" }}
+    {{ /taxonomy}}
+</div>
+
+<div>
+    {{ taxonomy from="resource_category" }}
+        {{ partial src="sets/resources" :downloads="entries" :id="slug" }}
+    {{ /taxonomy}}
+</div>
+
+{{ partial:components/page_builder }}

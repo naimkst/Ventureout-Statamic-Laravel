@@ -1,0 +1,34 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: twitter
+        field:
+          display: Twitter
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: facebook
+        field:
+          display: Facebook
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: instagram
+        field:
+          display: Instagram
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false

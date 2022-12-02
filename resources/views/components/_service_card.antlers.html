@@ -1,0 +1,8 @@
+<a href="{{ link ?? '#' }}" class="relative block overflow-hidden h-[410px] bg-blue-900 rounded-xl group">
+    {{ responsive:image class="object-cover w-full h-full transition duration-300 opacity-60 group-hover:scale-105" }}
+
+    <div class="absolute bottom-0 left-0 right-0 p-8 text-white transition-all group-hover:bg-blue-900/50">
+        <h4 class="mb-3 uppercase text-base font-medium font-neo group-hover:text-mango">{{ title }}</h4>
+        <p>{{ excerpt }} </p>
+    </div>
+</a>

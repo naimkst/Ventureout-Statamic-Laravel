@@ -1,0 +1,15 @@
+{{#
+	@name Text
+#}}
+<!-- Template: sets/text -->
+<section class="container my-10 lg:my-20">
+        <div class="w-full lg:w-8/12 lg:mx-auto">
+            {{ if heading }}
+                <h2 class="font-permanent text-mango text-center h1 mb-6 lg:mb-8">{{ block.heading }}</h2>
+            {{ /if }}
+
+            <div class="rte">
+                {{ block.content }}
+            </div>
+        </div>
+</section>

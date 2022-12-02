@@ -1,0 +1,14 @@
+<button
+    :id="$id('tab', whichChild($el.parentElement, $refs.tablist))"
+    @click="select($el.id)"
+    @mousedown.prevent
+    @focus="select($el.id)"
+    type="button"
+    :tabindex="isSelected($el.id) ? 0 : -1"
+    :aria-selected="isSelected($el.id)"
+    :class="isSelected($el.id) ? 'bg-blue-900 text-white' : 'bg-pearl'"
+    class="inline-flex px-5 py-3 uppercase small font-neo"
+    role="tab"
+>
+    {{ text }}
+</button>

@@ -1,0 +1,28 @@
+{{#
+	@name Text with Video
+	@desc Set used for text with Video. Video can be aligned right or left.
+#}}
+<!-- Template: sets/text_with_video -->
+<section class="container my-10 lg:my-20">
+    <div class="flex flex-wrap justify-between row">
+        <div class="w-full lg:w-6/12 column {{ alignment == 'left' ? 'order-1 lg:order-2' : '' }}">
+            {{ if block.heading }}
+                <h2 class="mb-6 font-permanent text-mango">{{ block.heading }}</h1>
+            {{ /if }}
+
+            <div class="rte">
+                {{ block.content }}
+            </div>
+
+            {{ if block.buttons }}
+                {{ partial src="components/buttons" style="secondary" wrapperClass="mt-6 lg:mt-8"  }}
+            {{ /if }}
+        </div>
+
+        <div class="w-full mt-10 lg:w-5/12 lg:mt-0 column {{ alignment == 'left' ? 'order-2 lg:order-1' : '' }}">
+            <div class="aspect-video">
+                <iframe class="w-full h-full" src="{{ block.video | embed_url }}" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>

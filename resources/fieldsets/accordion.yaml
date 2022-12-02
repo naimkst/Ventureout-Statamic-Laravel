@@ -1,0 +1,81 @@
+title: Accordion
+fields:
+  -
+    handle: heading
+    field:
+      input_type: text
+      antlers: false
+      display: Heading
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: accordions
+    field:
+      collapse: false
+      previews: true
+      sets:
+        accordion:
+          display: Accordion
+          fields:
+            -
+              handle: heading
+              field:
+                input_type: text
+                antlers: false
+                display: Heading
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+                validate:
+                  - required
+            -
+              handle: content
+              field:
+                always_show_set_button: false
+                previews: true
+                buttons:
+                  - h4
+                  - h5
+                  - bold
+                  - italic
+                  - color
+                  - unorderedlist
+                  - orderedlist
+                  - removeformat
+                  - anchor
+                save_html: false
+                toolbar_mode: fixed
+                link_noopener: false
+                link_noreferrer: false
+                target_blank: false
+                reading_time: false
+                fullscreen: true
+                allow_source: true
+                enable_input_rules: true
+                enable_paste_rules: true
+                antlers: false
+                remove_empty_nodes: false
+                display: Content
+                type: bard
+                icon: bard
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+                validate:
+                  - required
+                collapse: false
+      display: Accordions
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

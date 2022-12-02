@@ -1,0 +1,17 @@
+title: 'CTA Bar'
+fields:
+  -
+    handle: cta
+    field:
+      antlers: false
+      display: CTA
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      validate:
+        - required
+  -
+    import: buttons

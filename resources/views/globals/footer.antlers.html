@@ -1,0 +1,116 @@
+{{#
+	@name Footer
+#}}
+<!-- Template: globals/footer -->
+<footer class="text-white bg-blue-900">
+    <img src="/img/mountain.png" alt="" class="w-full h-auto">
+
+    <div class="container pb-10">
+        <div class="grid grid-cols-6 gap-8 lg:grid-cols-12">
+            <div class="col-span-6 lg:col-span-3">
+                {{ svg src="logo-white" class="mb-10" }}
+
+                <h4 class="mt-auto mb-4 font-permanent">Follow us</h4>
+
+                <div class="flex items-center gap-6">
+                  {{ if socials:twitter }}
+                    <a href="{{ socials:twitter }}" target="_blank" rel="noopener noreferrer" class="transition text-mango-300 hover:text-white">
+                      {{ svg src="icon-twitter" }}
+                    </a>
+                  {{ /if }}
+
+                  {{ if socials:facebook }}
+                    <a href="{{ socials:facebook }}" target="_blank" rel="noopener noreferrer" class="transition text-mango-300 hover:text-white">
+                      {{ svg src="icon-facebook" }}
+                    </a>
+                  {{ /if }}
+
+                  {{ if socials:instagram }}
+                    <a href="{{ socials:instagram }}" target="_blank" rel="noopener noreferrer" class="transition text-mango-300 hover:text-white">
+                      {{ svg src="icon-instagram" }}
+                    </a>
+                  {{ /if }}
+                </div>
+            </div>
+
+            <div class="col-span-6 md:col-span-2">
+                <h5 class="mb-6">Services</h5>
+                <ul class="space-y-2">
+                    {{ nav:footer_services max_depth="1" }}
+                        <li class="text-sm leading-none">
+                            <a href="{{ url }}" class="transition hover:text-blue-300">
+                                {{ title }}
+                            </a>
+                        </li>
+                    {{ /nav:footer_services }}
+                </ul>
+            </div>
+
+            <div class="col-span-6 md:col-span-2">
+                <h5 class="mb-6">Company</h5>
+                <ul class="space-y-2">
+                    {{ nav:footer_company max_depth="1" }}
+                        <li class="text-sm leading-none">
+                            <a href="{{ url }}" class="transition hover:text-blue-300">
+                                {{ title }}
+                            </a>
+                        </li>
+                    {{ /nav:footer_company }}
+                </ul>
+            </div>
+
+            <div class="col-span-6 md:col-span-2">
+                <h5 class="mb-6">Location</h5>
+                <p class="text-sm">{{ footer:address|nl2br }}</p>
+            </div>
+
+            <div class="col-span-6 lg:col-span-3">
+                <h4 class="mb-4 font-permanent">Subscribe!</h4>
+                {{ form:subscribe }}
+            {{ if success }}
+                <div class="px-4 py-3 text-black rounded-lg bg-mango">
+                    {{ success }}
+                </div>
+            {{ else }}
+
+            <div class="">
+                {{ if errors }}
+                    <div class="col-span-2 px-4 py-3 mb-2 text-white bg-red-300 rounded-lg p">
+                        {{ errors }}
+                            {{ value }}<br>
+                        {{ /errors }}
+                    </div>
+                {{ /if }}
+
+                {{ fields }}
+                    <div class="mb-3 newsletter-field">
+                        <div>{{ field }}</div>
+
+                        {{ if error }}
+                            <p class="italic text-white small">{{ error }}</p>
+                        {{ /if }}
+                    </div>
+                {{ /fields }}
+            </div>
+
+                <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+
+                <div class="text-right">
+                    {{ partial:components/buttons/primary
+                        color="orange"
+                        type="button"
+                        subtype="submit"
+                        text="Subscribe"
+                        class="justify-center w-full"
+                    }}
+                </div>
+            {{ /if }}
+        {{ /form:subscribe }}
+            </div>
+        </div>
+
+        {{ if footer.copyright_text }}
+            <p class="mt-8 text-blue-300 small">{{ footer.copyright_text }}</p>
+        {{ /if }}
+    </div>
+</footer>

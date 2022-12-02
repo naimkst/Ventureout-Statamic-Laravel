@@ -1,0 +1,28 @@
+{{#
+	@name Gallery
+#}}
+<!-- Template: sets/gallery -->
+<section class="container my-14 lg:my-24" x-data="gallery">
+    <div class="static splide" aria-labelledby="carousel-title" x-ref="slider">
+        <div class="!overflow-visible splide__track">
+            <ul class="splide__list">
+                {{ images }}
+                <li class="flex flex-col items-center justify-center splide__slide">
+                    <a href="{{ url }}" title="Link to {{ alt }}" target="_blank">
+                        <img src="{{ glide:url h="400" }}" class="w-auto h-full" alt="{{ alt }}">
+                    </a>
+                </li>
+                {{ /images }}
+            </ul>
+        </div>
+
+        <div class="flex items-center gap-4 splide__arrows mt-7">
+            <button class="relative flex items-center justify-center transition hover:text-mango splide__arrow splide__arrow--prev">
+                {{ svg:icon-arrow-left }}
+            </button>
+            <button class="relative flex items-center justify-center transition hover:text-mango splide__arrow splide__arrow--next">
+                {{ svg:icon-arrow-right }}
+            </button>
+        </div>
+    </div>
+</section>

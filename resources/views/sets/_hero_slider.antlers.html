@@ -1,0 +1,22 @@
+<section class="relative text-white bg-blue-900">
+    <div class="static splide" aria-labelledby="carousel-title" x-data="heroSlider" x-ref="slider">
+        <div class="splide__track" data-glide-el="track">
+            <ul class="splide__list">
+                {{ slides }}
+                    <li class="splide__slide">
+                        {{ responsive:image class="object-cover w-full h-auto aspect-square lg:aspect-video" }}
+
+                        <div class="absolute inset-0 flex flex-col justify-center py-10 bg-black/20">
+                            <div class="container">
+                                {{ if kicker }}
+                                    <p class="mb-4">{{ kicker }}</p>
+                                {{ /if }}
+
+                                <h1 class="mb-4 font-medium font-neo hero-large lg:w-8/12">{{ heading }}</h1>
+                            </div>
+                        </div>
+                    </li>
+                {{ /slides }}
+    </ul>
+    </div>
+</section>

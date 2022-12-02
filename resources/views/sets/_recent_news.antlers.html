@@ -1,0 +1,16 @@
+{{#
+	@name CTA Bar with Image
+	@desc Set used for the cta bar.
+#}}
+<!-- Template: sets/recent_news -->
+<section class="text-white bg-blue-900 py-14 lg:py-24">
+    <div class="container">
+        <h2 class="mb-14 font-permanent text-mango">{{ block.heading }}</h2>
+
+        <div class="flex flex-wrap row">
+            {{ collection from="articles" sort="date:desc" limit="2" }}
+                {{ partial:components/article_card_large }}
+            {{ /collection }}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,31 @@
+title: Hero
+fields:
+  -
+    handle: hero
+    field:
+      collapse: false
+      previews: true
+      max_sets: 1
+      sets:
+        hero_simple:
+          display: 'Hero (Simple)'
+          fields:
+            -
+              import: hero_simple
+        hero_with_image:
+          display: 'Hero (With Image)'
+          fields:
+            -
+              import: hero_with_image
+        hero_slider:
+          display: 'Hero (Slider)'
+          fields:
+            -
+              import: hero_slider
+      display: Hero
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

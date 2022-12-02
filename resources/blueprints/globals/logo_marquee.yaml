@@ -1,0 +1,23 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: logos
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Logos
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          validate:
+            - required
+            - image
+          instructions: 'You can upload and add multiple logos here.'

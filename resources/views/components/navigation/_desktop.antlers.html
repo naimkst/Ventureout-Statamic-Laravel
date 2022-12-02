@@ -1,0 +1,41 @@
+{{#
+	@name Main desktop navigation
+	@desc The sites main desktop navigation rendered on each page.
+#}}
+<nav
+    class="z-50 fixed inset-0 top-[76px] p-4 pt-10 lg:p-0 lg:relative lg:top-0 lg:mr-8 bg-blue-900 lg:bg-transparent"
+    style="display: none"
+    x-show="showNav"
+    x-on:resize.window="resizeEvent"
+>
+    <ul class="flex flex-col space-y-6 lg:items-center lg:flex-row lg:space-y-0 lg:space-x-10" @click.away="activeParent = null">
+        {{ nav:main max_depth="2" }}
+                {{ if depth == 1 }}
+                    <li class="relative leading-none" >
+                        <a href="{{ url }}" class="flex items-center justify-between font-medium uppercase transition lg:justify-start small hover:text-mango" @click="activeParent = activeParent == {{ index }} ? null : {{ index }}" :class="activeParent == {{ index }} ? 'text-mango-300' : ''">
+                            {{ title }}
+
+                            {{ if children }}
+                                <span class="ml-2" :class="activeParent == {{ index }} ? '' : 'rotate-180'">
+                                    {{ svg src="icon-chevron" class="w-3" }}
+                                </span>
+                            {{ /if }}
+                        </a>
+
+                        {{ if children }}
+                            <ul x-show="activeParent == {{ index }}" class="flex flex-col min-w-full px-4 py-4 mt-3 space-y-3 bg-blue-700 rounded-md lg:absolute lg:right-0 lg:bg-blue-900 top-full">{{ *recursive children* }}</ul>
+                        {{ /if }}
+                    </li>
+                {{ else }}
+                    <li class="flex-shrink-0 whitespace-nowrap">
+                        <a href="{{ url }}" class="font-medium transition small hover:text-mango">
+                            {{ title }}
+                        </a>
+                    </li>
+                {{ /if }}
+            </li>
+        {{ /nav:main }}
+
+        <li class="sm:hidden">{{ partial:components/buttons/primary :href="header.book_now_link" text="Book Now" class="small" }}</li>
+    </ul>
+</nav>

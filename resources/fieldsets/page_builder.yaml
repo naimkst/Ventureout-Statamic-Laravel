@@ -1,0 +1,94 @@
+title: 'Page Builder'
+fields:
+  -
+    handle: page_builder
+    field:
+      collapse: false
+      sets:
+        text:
+          display: Text
+          fields:
+            -
+              import: text
+        text_with_image:
+          display: 'Text (With Image)'
+          fields:
+            -
+              import: text_with_image
+        text_with_video:
+          display: 'Text (With Video)'
+          fields:
+            -
+              import: text_with_video
+        tabs:
+          display: Tabs
+          fields:
+            -
+              import: tabs
+        recent_news:
+          display: 'Recent News'
+          fields:
+            -
+              import: recent_news
+        logo_marquee:
+          display: 'Logo Marquee'
+          fields:
+            -
+              handle: information
+              field:
+                html: '<p>This fields data is pulled from Globals -> Logos to save on repition of data entry. Keep this fieldset in the page builder to control where it is placed.</p>'
+                display: Information
+                type: html
+                icon: html
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+        testimonial:
+          display: Testimonial
+          fields:
+            -
+              import: testimonial
+        usps:
+          display: USPs
+          fields:
+            -
+              import: usps
+        accordion:
+          display: Accordion
+          fields:
+            -
+              import: accordion
+        service_cards:
+          display: 'Service Cards'
+          fields:
+            -
+              import: services
+        gallery:
+          display: Gallery
+          fields:
+            -
+              import: gallery
+        cta_bar:
+          display: 'CTA Bar'
+          fields:
+            -
+              import: cta_bar
+        cta_bar_with_image:
+          display: 'CTA Bar (With Image)'
+          fields:
+            -
+              import: cta_bar_with_image
+        team_member:
+          display: 'Team Member'
+          fields:
+            -
+              import: team_card
+      display: 'Page Builder'
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      previews: true

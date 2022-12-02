@@ -1,0 +1,11 @@
+<section class="py-32 text-center text-white bg-blue-900">
+    <div class="container max-w-[800px] pt-[76px]">
+        <h1 class="mb-4 font-permanent">{{ block.heading }}</h1>
+
+        {{ if block.excerpt }}
+            <p class="mb-8">{{ block.excerpt }}</p>
+        {{ /if }}
+
+        {{ partial src="components/buttons" style="primary" center="1"  }}
+    </div>
+</section>

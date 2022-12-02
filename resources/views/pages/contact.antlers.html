@@ -1,0 +1,84 @@
+{{ partial:components/hero }}
+
+<div class="container grid grid-cols-3 gap-10 my-14 lg:my-24">
+    <div class="col-span-3 md:col-span-1 lg:pr-10 xl:pr-20">
+        <div class="p-8 space-y-8 rounded-lg bg-pearl">
+            <div class="flex gap-4">
+                <div class="w-5 pt-2">{{ svg:icon-address }}</div>
+                <p class="small">{{ address|nl2br }}</p>
+            </div>
+
+            {{ contacts }}
+            <div class="flex gap-4">
+                <div class="w-5 pt-2">{{ svg:icon-phone }}</div>
+                <div class="space-y-1">
+                    <p class="small text-mango">{{ name }}</p>
+                    <p class="small"><a href="tel:{{ phone_number }}">{{ phone_number }}</a></p>
+                    <p class="text-blue-300 small">{{ description }}</p>
+                </div>
+            </div>
+            {{ /contacts }}
+        </div>
+
+        {{ if direction_link }}
+            {{ partial
+                src="components/buttons/secondary"
+                :href="direction_link"
+                text="Get Directions"
+                class="w-full mt-8"
+            }}
+        {{ /if }}
+    </div>
+
+    <div class="col-span-3 md:col-span-2 ">
+        {{ form:contact_us }}
+            {{ if success }}
+                <div class="px-4 py-3 text-black rounded-lg bg-mango">
+                    {{ success }}
+                </div>
+            {{ else }}
+            <div class="grid grid-cols-2 gap-4">
+                {{ if errors }}
+                    <div class="col-span-2 px-4 py-3 mb-2 text-white bg-red-300 rounded-lg p">
+                        {{ errors }}
+                            {{ value }}<br>
+                        {{ /errors }}
+                    </div>
+                {{ /if }}
+
+                {{ fields }}
+                    <div class="col-span-2 mb-5 md:col-span-1 md:last:col-span-2">
+                        <label>
+                            {{ display }}
+                            {{ if validate | contains:required }}
+                                <sup class="text-red">*</sup>
+                            {{ /if }}
+                        </label>
+
+                        <div>{{ field }}</div>
+
+                        {{ if error }}
+                            <p class="italic text-gray-500 small">{{ error }}</p>
+                        {{ /if }}
+                    </div>
+                {{ /fields }}
+            </div>
+
+                <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+
+                <div class="text-right">
+                    {{ partial:components/buttons/primary
+                        color="orange"
+                        type="button"
+                        subtype="submit"
+                        text="Submit"
+                    }}
+                </div>
+            {{ /if }}
+        {{ /form:contact_us }}
+    </div>
+</div>
+
+<div class="map aspect-[14/6] md:aspect-[14/4] overflow-y-hidden">
+    {{ map_iframe }}
+</div>

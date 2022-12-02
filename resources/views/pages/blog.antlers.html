@@ -1,0 +1,21 @@
+{{ partial:components/hero }}
+
+<div class="container my-14 lg:my-24">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 md:grid-cols-2">
+        {{ collection from="articles" paginate="12" as="posts" sort="date:desc" }}
+            {{ if no_results }}
+                <p>Aww, there are no results.</p>
+            {{ /if }}
+
+            {{ posts }}
+                {{ partial:components/article_card }}
+            {{ /posts }}
+
+            <div class="col-span-full">
+                {{ paginate:auto_links }}
+            </div>
+        {{ /collection }}
+    </div>
+</div>
+
+{{ partial:components/page_builder }}
