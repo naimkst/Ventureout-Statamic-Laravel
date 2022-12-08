@@ -4,18 +4,22 @@ blueprint: pages
 title: 'Resources & Downloads'
 hero:
   -
+    id: 5QfcGIoT
     heading: 'Resources & Downloads'
     type: hero_simple
     enabled: true
     excerpt: 'Click on the Category buttons below to jump to that Heading'
 page_builder:
   -
+    id: e28ETnfd
     type: logo_marquee
     enabled: true
   -
+    id: 7rRhbjT6
     cta: "Not found the information you were looking for?  Then please email us, we'll be able to  help...."
     buttons:
       -
+        id: nNTc8r86
         link:
           type: entry
           entry:
@@ -28,7 +32,7 @@ page_builder:
     enabled: true
     background_style: black
 updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
-updated_at: 1670511915
+updated_at: 1670516345
 template: pages/resources
 use_meta_keywords: false
 no_index_page: false

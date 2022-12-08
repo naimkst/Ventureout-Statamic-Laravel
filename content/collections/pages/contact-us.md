@@ -2,10 +2,11 @@
 id: e2fec699-2ff4-4be0-b016-ea33f29f3f98
 blueprint: contact
 title: 'Contact Us'
-updated_by: 115d3974-8cac-461e-9579-c5775a2031e7
-updated_at: 1666467972
+updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
+updated_at: 1670516077
 hero:
   -
+    id: 0pkkqlEf
     heading: 'Contact Us'
     excerpt: |-
       To get in touch with our team, please fill out the contact form below and a member of our team will get back to you within 48 hours.  
@@ -13,15 +14,16 @@ hero:
       Or you may be able to find what you are looking for on our FAQ page or Downloads pages here......
     buttons:
       -
+        id: D5QuEqDy
         link:
           type: entry
-          text: 'Resources & downloads'
           entry:
             - 1815dddc-ee0a-4758-b6ec-efc00951ebdb
         colour: orange
         type: button
         enabled: true
       -
+        id: n1d3XHLe
         link:
           type: entry
           text: FAQs
@@ -38,12 +40,14 @@ address: |-
   Varley Park, Battersea Road, Heaton Mersey, Stockport, SK4 3EA
 contacts:
   -
+    id: CvbBLk41
     name: Ian
     phone_number: '07905 851229'
     description: 'Hire or guided river trips / Parties / corporate groups'
     type: contact
     enabled: true
   -
+    id: LC1yirkS
     name: Kevin
     phone_number: '07980 306869'
     description: 'Duke of Edinburgh’s Award / Holiday clubs / School bookings'
