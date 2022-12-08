@@ -1,22 +1,19 @@
 {{#
-	@name Secondary Button
-	@desc Secondary button used throughout the site, defaults to output `a` tag.
+@name Secondary Button
+@desc Secondary button used throughout the site, defaults to output `a` tag.
 #}}
 <!-- Template: components/button/secondary -->
 {{ class = switch(
-    (color == 'orange') => 'border-mango hover:bg-mango hover:text-white ' + class,
-    (color == 'black') => 'border-blue-900 hover:bg-blue-900 hover:text-white ' + class,
-    () => 'border-blue-900 hover:bg-blue-900 hover:text-white ' + class
+(color == 'orange') => 'border-mango hover:bg-mango hover:text-white ' + class,
+(color == 'black') => 'border-blue-900 hover:bg-blue-900 hover:text-white ' + class,
+() => 'border-blue-900 hover:bg-blue-900 hover:text-white ' + class
 ) }}
 
 
 <{{ type or 'a' }}
     class="rounded-full px-5 py-2 transition inline-flex justify-center border small font-medium min-w-[120px] {{ class }}"
-    {{ if type }} type="{{ type }}" {{ /if }}
-    {{ if href }} href="{{ href }}" {{ /if }}
-    {{ if target | contains: 'http' }} target="_blank" {{ /if }}
-    {{ if href | contains: 'http' }} rel="noopener noreferrer" {{ /if }}
-    {{ slot:attributes }}
->
+    {{ if type }} type="{{ type }}" {{ /if }} {{ if href }} href="{{ href }}" {{ /if }} {{ if target | contains: 'http'
+    }} target="_blank" {{ /if }} {{ if href | contains: 'http' }} rel="noopener noreferrer" {{ /if }} {{ slot:attributes
+    }}>
     {{ text }}
 </{{ type or 'a' }}>

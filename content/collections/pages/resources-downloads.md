@@ -27,8 +27,8 @@ page_builder:
     type: cta_bar_with_image
     enabled: true
     background_style: black
-updated_by: 115d3974-8cac-461e-9579-c5775a2031e7
-updated_at: 1666712232
+updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
+updated_at: 1670511915
 template: pages/resources
 use_meta_keywords: false
 no_index_page: false

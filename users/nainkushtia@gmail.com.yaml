@@ -9,3 +9,5 @@ preferences:
   collections:
     faqs:
       per_page: 500
+    pages:
+      after_save: continue_editing

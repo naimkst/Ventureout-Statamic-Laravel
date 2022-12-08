@@ -1,21 +1,18 @@
 {{#
-	@name Primary Button
-	@desc Main button used throughout the site, can be used as an anchor or a button.
+@name Primary Button
+@desc Main button used throughout the site, can be used as an anchor or a button.
 #}}
 {{ class = switch(
-    (color == 'white') => 'text-blue-900 bg-white ' + class,
-    (color == 'orange') => 'text-blue-900 bg-mango ' + class,
-    (color == 'black') => 'text-white bg-blue-900 ' + class,
-    () => 'bg-mango text-blue-900 ' + class
+(color == 'white') => 'text-blue-900 bg-white ' + class,
+(color == 'orange') => 'text-blue-900 bg-mango ' + class,
+(color == 'black') => 'text-white bg-blue-900 ' + class,
+() => 'bg-mango text-blue-900 ' + class
 ) }}
 
 <!-- Template: components/button/primary -->
 <{{ type or 'a' }}
-    class="hover:bg-opacity-90 font-sm font-medium pt-3 pb-2.5 px-6 inline-flex rounded-full transition {{ class }}"
-    {{ if subtype && type != 'a' }} type="{{ subtype }}" {{ /if }}
-    {{ if href }} href="{{ href }}" {{ /if }}
-    {{ if target | contains: 'http' }} target="_blank" {{ /if }}
-    {{ if href | contains: 'http' }} rel="noopener noreferrer" {{ /if }}
->
+    class="hover:bg-opacity-90 font-sm font-medium pt-3 pb-2.5 px-6 inline-flex rounded-full transition {{ class }}" {{
+    if subtype && type !='a' }} type="{{ subtype }}" {{ /if }} {{ if href }} href="{{ href }}" {{ /if }} {{ if target |
+    contains: 'http' }} target="_blank" {{ /if }} {{ if href | contains: 'http' }} rel="noopener noreferrer" {{ /if }}>
     {{ text }}
 </{{ type or 'a' }}>

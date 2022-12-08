@@ -1,6 +1,6 @@
 {{#
-	@name CTA Bar
-	@desc Set used for the cta bar.
+@name CTA Bar
+@desc Set used for the cta bar.
 #}}
 <!-- Template: sets/cta_bar -->
 <section class="py-10 text-white lg:py-24 bg-mango">
@@ -9,9 +9,9 @@
             <div class="w-full mx-auto text-center lg:w-7/12 column">
                 <h2 class="text-white h3">{{ block.cta }}</h1>
 
-                {{ if block.buttons }}
-                    {{ partial src="components/buttons" style="primary" wrapperClass="mt-6 lg:mt-8" center="1"  }}
-                {{ /if }}
+                    {{ if block.buttons }}
+                    {{ partial src="components/buttons" style="primary" wrapperClass="mt-6 lg:mt-8" center="1" }}
+                    {{ /if }}
             </div>
         </div>
     </div>
