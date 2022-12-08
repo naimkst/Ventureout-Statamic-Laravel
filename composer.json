@@ -18,7 +18,7 @@
         "rias/statamic-link-it": "^2.2",
         "silentz/mailchimp": "^2.9",
         "spatie/statamic-responsive-images": "^2.14",
-        "statamic/cms": "3.3.43",
+        "statamic/cms": "^3.3",
         "withcandour/aardvark-seo": "^2.0",
         "xndbogdan/statamic-bard-text-color": "^2.4"
     },
