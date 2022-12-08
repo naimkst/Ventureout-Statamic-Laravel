@@ -8,11 +8,8 @@
     },
 }" role="region" class="transition bg-white rounded-xl" :class="expanded ? 'shadow-xl' : 'shadow'">
     <h3>
-        <button
-            x-on:click="expanded = !expanded"
-            :aria-expanded="expanded"
-            class="flex items-center justify-between w-full px-8 py-4 font-medium h5"
-        >
+        <button x-on:click="expanded = !expanded" :aria-expanded="expanded"
+            class="flex items-center justify-between w-full px-8 py-4 font-medium h5">
             <span class="text-left">{{ title ?? heading }}</span>
             <span :class="expanded ? '' : 'rotate-180'" aria-hidden="true" class="ml-4 transition duration-500">
                 {{ svg src="icon-chevron" }}
