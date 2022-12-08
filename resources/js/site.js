@@ -26,6 +26,4 @@ Alpine.data('gallery', gallery)
 // Init
 window.Alpine = Alpine
 
-console.log('Loaded!')
-
 Alpine.start()

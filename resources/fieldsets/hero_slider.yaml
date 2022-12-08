@@ -56,6 +56,17 @@ fields:
                 validate:
                   - required
                   - image
+            -
+              handle: slider_video
+              field:
+                default: 'https://player.vimeo.com/video/370201673?autoplay=1&title=0&byline=0&portrait=0&loop=1&muted=1'
+                display: 'Hero Video'
+                type: video
+                icon: video
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
       display: 'Hero Slider'
       type: replicator
       icon: replicator

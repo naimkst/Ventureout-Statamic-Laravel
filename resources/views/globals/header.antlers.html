@@ -1,20 +1,51 @@
 {{#
-	@name Header
-	@desc The header component rendered on each page.
+@name Header
+@desc The header component rendered on each page.
 #}}
 
-<header x-data="header()" class="h-[76px] -mb-[76px] z-10 flex items-center w-full px-4 py-4 text-white" :class="! showNav ? 'bg-blue-900' : 'bg-blue-900 lg:bg-transparent'">
+<header x-data="header()" id="sticky-header"
+    class="h-[76px] -mb-[76px] z-10 flex items-center w-full px-4 py-4 text-white"
+    :class="! showNav ? 'bg-blue-900' : 'bg-blue-900 lg:bg-transparent'">
     <a href="{{ site.url }}" aria-label="{{ config:app:name }} logo" class="flex-shrink-0 mr-auto">
         {{ svg src="logo-white" class="mr-8" }}
     </a>
 
     {{ partial:components/navigation/desktop }}
 
-    {{ partial:components/buttons/primary :href="header.book_now_link" text="Contact Us" class="flex-shrink-0 hidden uppercase small sm:block" }}
+    {{ partial:components/buttons/primary :href="header.book_now_link" text="Contact Us" class="flex-shrink-0 hidden
+    uppercase small sm:block" }}
 
     <button type="button" x-on:click="toggleNav" class="ml-4 lg:hidden">
-        <svg x-show="!showNav" class="w-8 h-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        <svg x-show="!showNav" class="w-8 h-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
 
-        <svg x-show="showNav" style="display:none" class="w-8 h-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
+        <svg x-show="showNav" style="display:none" class="w-8 h-8 fill-white" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512">
+            <path
+                d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+        </svg>
     </button>
 </header>
+<style>
+    .fix-header {
+        position: fixed;
+        background: #1c2731;
+        top: 0;
+        left: 0;
+    }
+</style>
+<script>
+    addEventListener('scroll', (event) => { });
+    onscroll = (event) => {
+        if (window.scrollY >= 70) {
+            var d = document.getElementById("sticky-header");
+            return d.classList.add("fix-header");
+        }
+        if (window.scrollY < 20) {
+            var d = document.getElementById("sticky-header");
+            return d.classList.remove("fix-header");
+        }
+    };
+</script>
