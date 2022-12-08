@@ -5,12 +5,11 @@
                 {{ slides }}
                 <li class="splide__slide">
                     {{ if slider_video }}
-                    <iframe class="object-cover w-full h-auto aspect-square lg:aspect-video sm:hidden"
-                        src={{slider_video}}></iframe>
+                    <iframe class="object-cover w-full h-auto aspect-square lg:aspect-video" src={{slider_video}}>
+                    </iframe>
                     {{ else if }}
                     {{ responsive:image class="object-cover w-full h-auto aspect-square lg:aspect-video" }}
                     {{ /endif }}
-
                     <div class="absolute inset-0 flex flex-col justify-center py-10 bg-black/20">
                         <div class="container">
                             {{ if kicker }}
