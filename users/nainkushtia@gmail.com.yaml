@@ -11,3 +11,11 @@ preferences:
       per_page: 500
     pages:
       after_save: continue_editing
+    articles:
+      columns:
+        - title
+        - slug
+        - articles_categories
+        - articles_tags
+        - author
+        - date
