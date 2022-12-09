@@ -4,8 +4,8 @@ blueprint: resource
 title: 'Holiday Club Parents Booklet 2021'
 download: vol-resources-and-documents/2021-holiday-club_parent-info-2_compressed.pdf
 resource_category:
-  - vol-participant-info
-  - holiday-club
+    - vol-participant-info
+    - holiday-club
 use_meta_keywords: false
 no_index_page: false
 no_follow_links: false

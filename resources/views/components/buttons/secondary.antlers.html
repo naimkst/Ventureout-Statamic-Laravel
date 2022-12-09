@@ -9,11 +9,10 @@
 () => 'border-blue-900 hover:bg-blue-900 hover:text-white ' + class
 ) }}
 
-
 <{{ type or 'a' }}
     class="rounded-full px-5 py-2 transition inline-flex justify-center border small font-medium min-w-[120px] {{ class }}"
-    {{ if type }} type="{{ type }}" {{ /if }} {{ if href }} href="{{ href }}" {{ /if }} {{ if target | contains: 'http'
-    }} target="_blank" {{ /if }} {{ if href | contains: 'http' }} rel="noopener noreferrer" {{ /if }} {{ slot:attributes
-    }}>
+    {{ if type }} type="{{ type }}" {{ /if }} {{ if href || hrefs }} href="{{ hrefs }}" {{ /if }} {{ if target |
+    contains: 'http' }} target="_blank" {{ /if }} {{ if hrefs | contains: 'http' }} rel="noopener noreferrer" {{ /if }}
+    {{ slot:attributes }}>
     {{ text }}
 </{{ type or 'a' }}>

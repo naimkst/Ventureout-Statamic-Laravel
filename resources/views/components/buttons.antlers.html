@@ -2,9 +2,9 @@
     {{ buttons scope="button" }}
     {{ partial
     src="components/buttons/{style}"
-    href="{button.link | linkIt:url}"
+    hrefs="{button.link | linkIt:url}"
     text="{button.link | linkIt:text}"
     type="a"
     :color="button.colour" }}
     {{ /buttons }}
-</div>  
+</div>
