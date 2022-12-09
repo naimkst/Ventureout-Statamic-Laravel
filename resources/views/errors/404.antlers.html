@@ -1,8 +1,7 @@
 <div class="bg-blue-900 h-[76px]">&nbsp;</div>
-
 <div class="container my-14 lg:my-24">
-    <h1 class="mb-5 text-center lg:mb-10 font-permanent text-mango">404! Page not found</h1>
+    <h1 class="mb-5 text-center lg:mb-10 font-permanent text-mango">{{ 404_page:title }}</h1>
     <div class="mx-auto text-center rte lg:w-8/12">
-        <p>Sorry the page you're looking for could not be found. Please use the navigation or head back to the <a href="/">home page</a>.</p>
+        <p>{{ 404_page:description }} <a href="{{404_page:not_found_link}}">home page</a>.</p>
     </div>
 </div>
