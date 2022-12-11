@@ -1,29 +1,24 @@
 {{#
-	@name Tabs Component
+@name Tabs Component
 #}}
 <!-- Template: sets/tabs -->
 <section class="my-14 lg:my-24">
     <div class="container">
         <div x-data="tabs" x-id="['tab']" class="space-y-6">
-            <ul
-                x-ref="tablist"
-                @keydown.right.prevent.stop="$focus.wrap().next()"
-                @keydown.home.prevent.stop="$focus.first()"
-                @keydown.page-up.prevent.stop="$focus.first()"
-                @keydown.left.prevent.stop="$focus.wrap().prev()"
-                @keydown.end.prevent.stop="$focus.last()"
-                @keydown.page-down.prevent.stop="$focus.last()"
-                role="tablist"
-                class="flex flex-wrap items-stretch mb-5 rounded-xl bg-pearl xl:bg-white"
-            >
+            <ul x-ref="tablist" @keydown.right.prevent.stop="$focus.wrap().next()"
+                @keydown.home.prevent.stop="$focus.first()" @keydown.page-up.prevent.stop="$focus.first()"
+                @keydown.left.prevent.stop="$focus.wrap().prev()" @keydown.end.prevent.stop="$focus.last()"
+                @keydown.page-down.prevent.stop="$focus.last()" role="tablist"
+                class="flex flex-wrap items-stretch mb-5 rounded-xl bg-pearl xl:bg-white">
                 {{ tabs scope="tab" }}
-                    <li class="h-full overflow-hidden xl:first:rounded-l-xl xl:last:rounded-r-xl">{{ partial src="components/tabs/tab_button" :text="heading"}}</li>
+                <li class="h-full overflow-hidden xl:first:rounded-l-xl xl:last:rounded-r-xl">{{ partial
+                    src="components/tabs/tab_button" :text="heading"}}</li>
                 {{ /tabs }}
             </ul>
 
             <div role="tabpanels" class="bg-pearl rounded-xl">
                 {{ tabs scope="tab" }}
-                    {{ partial src="components/tabs/tab_content" }}
+                {{ partial src="components/tabs/tab_content" }}
                 {{ /tabs }}
             </div>
         </div>

@@ -4,7 +4,7 @@
 #}}
 
 <header x-data="header()" id="sticky-header"
-    class="h-[76px] -mb-[76px] z-10 flex items-center w-full px-4 py-4 text-white"
+    class="h-[76px] -mb-[76px] z-50 flex items-center w-full px-4 py-4 text-white"
     :class="! showNav ? 'bg-blue-900' : 'bg-blue-900 lg:bg-transparent'">
     <a href="{{ site.url }}" aria-label="{{ config:app:name }} logo" class="flex-shrink-0 mr-auto">
         {{ svg src="logo-white" class="mr-8" }}

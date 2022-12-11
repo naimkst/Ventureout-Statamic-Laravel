@@ -4,27 +4,36 @@ blueprint: pages
 title: 'Outdoor holiday club'
 hero:
   -
+    id: PpCC0YPJ
     slides:
       -
+        id: 1HsBrttF
         heading: 'Venture Out Holiday Club'
         image: 'holiday-club/photo-02-08-2019,-09-54-51-(1).jpg'
         type: slide
         enabled: true
+        slider_video: 'https://youtu.be/IY2D6eFhL7w'
       -
+        id: bEAYeKzW
         heading: 'Venture Out Holiday Club'
         image: canoeing/voexp-(223).jpg
         type: slide
         enabled: true
+        slider_video: 'https://youtu.be/IY2D6eFhL7w'
       -
+        id: 6HMlm7Tn
         heading: 'Venture Out Holiday Club'
         image: centre/20190730_130050.jpg
         type: slide
         enabled: true
+        slider_video: 'https://youtu.be/IY2D6eFhL7w'
       -
+        id: y38JZB4y
         heading: 'Venture Out Holiday Club'
         image: 'cycling/outdoor-activites-&-sports.jpg'
         type: slide
         enabled: true
+        slider_video: 'https://youtu.be/IY2D6eFhL7w'
     type: hero_slider
     enabled: true
 use_meta_keywords: false
@@ -33,10 +42,11 @@ no_follow_links: false
 sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
-updated_by: 115d3974-8cac-461e-9579-c5775a2031e7
-updated_at: 1666523034
+updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
+updated_at: 1670758475
 page_builder:
   -
+    id: YWimF17V
     heading: 'Outdoor holiday club'
     content:
       -
@@ -68,6 +78,7 @@ page_builder:
     type: text_with_video
     enabled: true
   -
+    id: ImS4MXtD
     heading: Overview
     content:
       -
@@ -147,6 +158,7 @@ page_builder:
     type: text_with_image
     enabled: true
   -
+    id: Yy2g9MRJ
     heading: 'A week-full of activities!'
     content:
       -
@@ -200,6 +212,7 @@ page_builder:
             text: 'Follow this link to see the huge list of our activities....'
     buttons:
       -
+        id: Iamd7qzK
         link:
           type: entry
           entry:
@@ -212,8 +225,10 @@ page_builder:
     type: text_with_image
     enabled: true
   -
+    id: Wq7HQBH6
     tabs:
       -
+        id: puBINHfP
         heading: Price
         content:
           -
@@ -262,7 +277,21 @@ page_builder:
                 text: 'No Childcare vouchers'
         type: tab
         enabled: true
+        cta: 'Cta details'
+        buttons:
+          -
+            id: lbj9sz78
+            link:
+              type: entry
+              entry:
+                - e2fec699-2ff4-4be0-b016-ea33f29f3f98
+            colour: orange
+            type: button
+            enabled: true
+        image: holiday-club/p1010302.jpg
+        background_style: orange
       -
+        id: 8inQZkEt
         heading: 'Outline of a week'
         content:
           -
@@ -410,7 +439,21 @@ page_builder:
                 text: ': canoe games, climbing games, archery, circus skills, handicrafts.'
         type: tab
         enabled: true
+        cta: 'Cta details'
+        buttons:
+          -
+            id: lbj9ugbo
+            link:
+              type: entry
+              entry:
+                - e2fec699-2ff4-4be0-b016-ea33f29f3f98
+            colour: black
+            type: button
+            enabled: true
+        image: holiday-club/p1010302.jpg
+        background_style: orange
       -
+        id: bybfNVaZ
         heading: 'Who is it for?'
         content:
           -
@@ -456,7 +499,21 @@ page_builder:
             type: paragraph
         type: tab
         enabled: true
+        cta: 'Cta details'
+        buttons:
+          -
+            id: lbj9urlk
+            link:
+              type: entry
+              entry:
+                - e2fec699-2ff4-4be0-b016-ea33f29f3f98
+            colour: orange
+            type: button
+            enabled: true
+        image: holiday-club/dsc03358.jpg
+        background_style: orange
       -
+        id: f1kQEfeE
         heading: 'What do they need to bring?'
         content:
           -
@@ -467,7 +524,21 @@ page_builder:
                 text: asdg
         type: tab
         enabled: true
+        cta: 'Cta details'
+        buttons:
+          -
+            id: lbj9v4dw
+            link:
+              type: entry
+              entry:
+                - e2fec699-2ff4-4be0-b016-ea33f29f3f98
+            colour: orange
+            type: button
+            enabled: true
+        image: holiday-club/p1010327.jpg
+        background_style: orange
       -
+        id: E1U9RrHF
         heading: Resources
         content:
           -
@@ -488,7 +559,21 @@ page_builder:
             type: paragraph
         type: tab
         enabled: true
+        cta: 'Cta details'
+        buttons:
+          -
+            id: lbj9vg1s
+            link:
+              type: entry
+              entry:
+                - e2fec699-2ff4-4be0-b016-ea33f29f3f98
+            colour: orange
+            type: button
+            enabled: true
+        image: holiday-club/20210604_152532.jpg
+        background_style: orange
       -
+        id: eRiT9nIJ
         heading: 'FAQ?'
         content:
           -
@@ -510,9 +595,37 @@ page_builder:
                 text: 'requently Asked Questions - Holiday Club'
         type: tab
         enabled: true
+        cta: 'Cta details'
+        buttons:
+          -
+            id: lbj9vqlu
+            link:
+              type: entry
+              entry:
+                - e2fec699-2ff4-4be0-b016-ea33f29f3f98
+            colour: black
+            type: button
+            enabled: true
+        image: holiday-club/20190801_090100.jpg
+        background_style: orange
+        tabs_image: holiday-club/dsc03358.jpg
     type: tabs
     enabled: true
+    cta: 'Here will be text'
+    buttons:
+      -
+        id: lbj9oxig
+        link:
+          type: entry
+          entry:
+            - e2fec699-2ff4-4be0-b016-ea33f29f3f98
+        colour: orange
+        type: button
+        enabled: true
+    image: holiday-club/p1010326.jpg
+    background_style: orange
   -
+    id: tcjBnBLO
     heading: 'How to book & pay'
     content:
       -
@@ -573,6 +686,7 @@ page_builder:
             type: hard_break
     buttons:
       -
+        id: jHJfvQGK
         link:
           type: url
           url: 'https://booking.bookinghound.com/fe/booking?og=d20ec4ba-003c-4f8c-a988-6b43d9f6740e&mode=ag&uniqueid=2'
@@ -586,6 +700,7 @@ page_builder:
     type: text_with_image
     enabled: true
   -
+    id: Cz4Fsxi0
     images:
       - centre/20210602_124351.jpg
       - centre/overview.jpg
@@ -629,9 +744,11 @@ page_builder:
     type: gallery
     enabled: true
   -
+    id: vJxxJ54T
     type: logo_marquee
     enabled: true
   -
+    id: gEklEyCx
     testimonial: |-
       “I love your holiday Club, my child comes home full of stories of new friends and great activities. They eat all their dinner and then fall asleep!”
 
