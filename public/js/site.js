@@ -8147,7 +8147,6 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('heroSlider', _components_
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('gallery', _components_gallery__WEBPACK_IMPORTED_MODULE_9__["default"]); // Init
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"];
-console.log('Loaded!');
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start();
 
 /***/ }),

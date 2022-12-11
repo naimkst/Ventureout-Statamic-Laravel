@@ -27,3 +27,42 @@ fields:
       always_save: false
       validate:
         - required
+  -
+    handle: testimonials
+    field:
+      collapse: false
+      previews: true
+      sets:
+        'Add New':
+          display: 'Add Testimonial'
+          fields:
+            -
+              handle: testimonial_description
+              field:
+                antlers: false
+                display: 'Testimonial Description'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: testimonial_author
+              field:
+                input_type: text
+                antlers: false
+                display: 'Testimonial Author'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+      display: Testimonials
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

@@ -1,13 +1,25 @@
 {{#
-	@name Testimonial Component
+@name Testimonial Component
 #}}
 <!-- Template: sets/accordion -->
 <section class="text-white bg-blue-900 py-14 lg:py-24">
     <div class="container">
-        <div class="relative pl-[90px] lg:w-9/12">
-            <span class="absolute top-0 left-0">{{ svg src="icon-quote" }}</span>
-            <p class="h2">{{ block.testimonial|nl2br }}</p>
-            <p class="mt-10 text-blue-300">{{ block.author }}</p>
+        <div class="static splide" aria-labelledby="carousel-title" x-data="heroSlider" x-ref="slider">
+            <div class="splide__track" data-glide-el="track">
+                <ul class="splide__list">
+                    {{ testimonials }}
+                    <li class="splide__slide">
+                        <div class="relative pl-[90px] lg:w-9/12">
+                            <span class="absolute top-0 left-0">{{ svg src="icon-quote" }}</span>
+                            <p class="h2">{{ testimonial_description|nl2br }}</p>
+                            <p class="mt-10 text-blue-300">{{ testimonial_author }}</p>
+                        </div>
+                    </li>
+                    {{ /testimonials }}
+                </ul>
+            </div>
+
         </div>
+
     </div>
 </section>

@@ -3,7 +3,7 @@ id: ae24f8f7-2bf9-46d9-b776-e111b7d0b957
 blueprint: home
 title: Home
 updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
-updated_at: 1670514165
+updated_at: 1670753141
 template: pages/home
 page_builder:
   -
@@ -137,6 +137,19 @@ page_builder:
     author: 'Trip advisor'
     type: testimonial
     enabled: true
+    testimonials:
+      -
+        id: lbj79m31
+        testimonial_description: '“My daughters attended a few days of the summer camp last year and had an amazing time! They really enjoyed all the activities, especially the kayaking. The staff are very experienced and are really good with all the kids. My daughters will definitely be back this half-term and also in the summer. Highly recommended for a fun and exciting alternative to the usual summers camps!!!”'
+        testimonial_author: 'Trip advisor'
+        type: 'Add New'
+        enabled: true
+      -
+        id: lbj79to2
+        testimonial_description: '“My daughters attended a few days of the summer camp last year and had an amazing time! They really enjoyed all the activities, especially the kayaking. The staff are very experienced and are really good with all the kids. My daughters will definitely be back this half-term and also in the summer. Highly recommended for a fun and exciting alternative to the usual summers camps!!!”'
+        testimonial_author: 'Trip advisor Two'
+        type: 'Add New'
+        enabled: true
   -
     id: xD5Oe3Bx
     type: logo_marquee
