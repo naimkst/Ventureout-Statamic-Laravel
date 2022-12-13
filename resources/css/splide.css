@@ -289,3 +289,9 @@
     right: 0.5em;
     top: 0;
 }
+.instagram button.splide__pagination__page {
+    display: none;
+}
+.tripSvg svg {
+    fill: #1c2731;
+}

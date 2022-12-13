@@ -3,7 +3,7 @@ id: ae24f8f7-2bf9-46d9-b776-e111b7d0b957
 blueprint: home
 title: Home
 updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
-updated_at: 1670922371
+updated_at: 1670933202
 template: pages/home
 page_builder:
   -
@@ -161,11 +161,8 @@ page_builder:
         id: lblzo1x1
         slide_images:
           - holiday-club/20190731_132309.jpg
-          - holiday-club/20190801_090100.jpg
           - holiday-club/dsc03358.jpg
           - holiday-club/p1010302.jpg
-          - holiday-club/p1010326.jpg
-          - holiday-club/dsc01043.jpg
         type: add_image
         enabled: true
       -
@@ -176,6 +173,31 @@ page_builder:
           - kayaking/rectangle-53.jpg
         type: add_image
         enabled: true
+  -
+    id: lbm0ohbf
+    add_testimonial:
+      -
+        id: lbm0oifx
+        avatar_image: logos/logo-2.png
+        type: items
+        enabled: true
+      -
+        id: lbm5p28a
+        avatar_image: holiday-club/p1010302.jpg
+        type: items
+        enabled: true
+      -
+        id: lbm6h4wn
+        avatar_image: kayaking/img-20210604-wa0093.jpg
+        type: items
+        enabled: true
+      -
+        id: lbm6hd2j
+        avatar_image: holiday-club/p1010327.jpg
+        type: items
+        enabled: true
+    type: trip_advisor
+    enabled: true
   -
     id: xD5Oe3Bx
     type: logo_marquee

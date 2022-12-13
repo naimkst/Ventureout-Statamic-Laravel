@@ -89,6 +89,11 @@ fields:
           fields:
             -
               import: instagram
+        trip_advisor:
+          display: 'Trip Advisor'
+          fields:
+            -
+              import: trip_advisor
       display: 'Page Builder'
       type: replicator
       icon: replicator

@@ -7,6 +7,7 @@ import header from './components/header.js'
 import marquee from './components/marquee.js'
 import tabs from './components/tabs.js'
 import serviceSlider from './components/service-slider'
+import tripAdvisorSlider from './components/trip-advisor'
 import heroSlider from './components/hero-slider'
 import gallery from './components/gallery'
 
@@ -20,6 +21,7 @@ Alpine.data('header', header)
 Alpine.data('marquee', marquee)
 Alpine.data('tabs', tabs)
 Alpine.data('serviceSlider', serviceSlider)
+Alpine.data('tripAdvisorSlider', tripAdvisorSlider)
 Alpine.data('heroSlider', heroSlider)
 Alpine.data('gallery', gallery)
 

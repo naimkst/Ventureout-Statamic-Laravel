@@ -1028,6 +1028,14 @@ select {
     top: 0;
 }
 
+.instagram button.splide__pagination__page {
+    display: none;
+}
+
+.tripSvg svg {
+    fill: #1c2731;
+}
+
 /* Fluid Typography Calculator: https://royalfig.github.io/fluid-typography-calculator/ */
 
 @font-face {
@@ -1940,24 +1948,24 @@ ol {
   height: 1.25rem;
 }
 
-.h-\[1px\] {
-  height: 1px;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-\[\] {
-  height: ;
-}
-
 .h-\[300px\] {
   height: 300px;
 }
 
-.h-\[300\] {
-  height: 300;
+.h-\[1px\] {
+  height: 1px;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .min-h-screen {
@@ -1990,6 +1998,14 @@ ol {
 
 .w-auto {
   width: auto;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-3 {
@@ -2115,6 +2131,14 @@ ol {
 
 .gap-\[1px\] {
   gap: 1px;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-x-8 {
@@ -2593,6 +2617,11 @@ ol {
 .text-blue {
   --tw-text-opacity: 1;
   color: rgb(81 113 139 / var(--tw-text-opacity));
+}
+
+.text-\[\#000000\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-blue-900 {

@@ -1,0 +1,48 @@
+{{#
+@name Instagram
+#}}
+
+<!-- Template: sets/cta_bar_with_image -->
+<!-- <section class="py-10 text-white lg:py-24 {{ background_style == 'black' ? 'bg-blue-900' : 'bg-mango' }}"> -->
+<section class="relative text-white py-10">
+  <div class="container">
+    <div class="static splide" aria-labelledby="carousel-title" x-data="tripAdvisorSlider" x-ref="slider">
+      <div class="splide__track" data-glide-el="track">
+        <div class="splide__list">
+          {{ add_testimonial }}
+          <div class="splide__slide">
+            <div class="flex gap-5 items-center">
+              <img class="h-16 w-16 rounded-full object-cover"
+                src="http://localhost:8000/img/asset/YXNzZXRzL3N0YWZmL3ZvZXhwLSgyMCkuanBn?fm=webp&q=90&fit=crop-50-50&w=1008&h=672&s=fd632c2e9e75d1001625a625c2f76fd8"
+                alt="">
+              <div>
+                <h3 class="font-permanent text-black">Claudine Jackson</h3>
+                <p class=" text-blue-300 small">August 27, 2020</p>
+              </div>
+            </div>
+            <div class="mt-5 flex gap-3">
+              <img class="w-7 h-7" src="{{'/assets/icons/star.png'}}" alt="">
+              <img class="w-7 h-7" src="{{'/assets/icons/star.png'}}" alt="">
+              <img class="w-7 h-7" src="{{'/assets/icons/star.png'}}" alt="">
+              <img class="w-7 h-7" src="{{'/assets/icons/star.png'}}" alt="">
+            </div>
+            <div class="mt-5">
+              <p class="text-[#000000]">Amazing customer support and fastastic product to showcase your reviews on
+                your website. Highly recommended
+              </p>
+            </div>
+          </div>
+          {{ /add_testimonial }}
+        </div>
+      </div>
+      <div class="tripSvg flex items-center justify-center gap-4 mt-10 splide__arrows">
+        <button class="relative flex items-center justify-center transition splide__arrow splide__arrow--prev">
+          {{ svg:icon-arrow-left }}
+        </button>
+        <button class="tripSvg relative flex items-center justify-center transition splide__arrow splide__arrow--next">
+          {{ svg:icon-arrow-right }}
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

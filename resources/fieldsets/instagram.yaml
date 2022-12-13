@@ -49,6 +49,7 @@ fields:
                 instructions_position: above
                 visibility: visible
                 always_save: false
+                max_files: 3
       display: 'Instagram Image'
       type: replicator
       icon: replicator

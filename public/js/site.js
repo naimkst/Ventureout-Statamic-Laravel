@@ -8107,6 +8107,49 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/trip-advisor.js":
+/*!*************************************************!*\
+  !*** ./resources/js/components/trip-advisor.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @splidejs/splide */ "./node_modules/@splidejs/splide/dist/js/splide.esm.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
+  return {
+    init: function init() {
+      new _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__["default"](this.$refs.slider, {
+        type: 'slider',
+        gap: 28,
+        perPage: 3,
+        perMove: 1,
+        arrows: true,
+        pagination: false,
+        breakpoints: {
+          1024: {
+            perPage: 3,
+            gap: 20
+          },
+          768: {
+            perPage: 2,
+            gap: 16
+          },
+          560: {
+            perPage: 1,
+            gap: 16
+          }
+        }
+      }).mount();
+    }
+  };
+});
+
+/***/ }),
+
 /***/ "./resources/js/site.js":
 /*!******************************!*\
   !*** ./resources/js/site.js ***!
@@ -8122,8 +8165,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_marquee_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/marquee.js */ "./resources/js/components/marquee.js");
 /* harmony import */ var _components_tabs_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/tabs.js */ "./resources/js/components/tabs.js");
 /* harmony import */ var _components_service_slider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/service-slider */ "./resources/js/components/service-slider.js");
-/* harmony import */ var _components_hero_slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/hero-slider */ "./resources/js/components/hero-slider.js");
-/* harmony import */ var _components_gallery__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/gallery */ "./resources/js/components/gallery.js");
+/* harmony import */ var _components_trip_advisor__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/trip-advisor */ "./resources/js/components/trip-advisor.js");
+/* harmony import */ var _components_hero_slider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/hero-slider */ "./resources/js/components/hero-slider.js");
+/* harmony import */ var _components_gallery__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/gallery */ "./resources/js/components/gallery.js");
+
 
 
 
@@ -8143,8 +8188,9 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('header', _components_head
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('marquee', _components_marquee_js__WEBPACK_IMPORTED_MODULE_5__["default"]);
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('tabs', _components_tabs_js__WEBPACK_IMPORTED_MODULE_6__["default"]);
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('serviceSlider', _components_service_slider__WEBPACK_IMPORTED_MODULE_7__["default"]);
-alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('heroSlider', _components_hero_slider__WEBPACK_IMPORTED_MODULE_8__["default"]);
-alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('gallery', _components_gallery__WEBPACK_IMPORTED_MODULE_9__["default"]); // Init
+alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('tripAdvisorSlider', _components_trip_advisor__WEBPACK_IMPORTED_MODULE_8__["default"]);
+alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('heroSlider', _components_hero_slider__WEBPACK_IMPORTED_MODULE_9__["default"]);
+alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('gallery', _components_gallery__WEBPACK_IMPORTED_MODULE_10__["default"]); // Init
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"];
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start();
