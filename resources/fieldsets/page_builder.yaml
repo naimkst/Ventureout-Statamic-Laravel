@@ -84,6 +84,11 @@ fields:
           fields:
             -
               import: team_card
+        instagram:
+          display: Instagram
+          fields:
+            -
+              import: instagram
       display: 'Page Builder'
       type: replicator
       icon: replicator

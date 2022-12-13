@@ -3,7 +3,7 @@ id: ae24f8f7-2bf9-46d9-b776-e111b7d0b957
 blueprint: home
 title: Home
 updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
-updated_at: 1670753141
+updated_at: 1670922371
 template: pages/home
 page_builder:
   -
@@ -151,6 +151,32 @@ page_builder:
         type: 'Add New'
         enabled: true
   -
+    id: lbjk1axr
+    follow_us_title: 'Follow us on Instagram'
+    type: instagram
+    enabled: true
+    account: '@instagram_acount'
+    instagram_image:
+      -
+        id: lblzo1x1
+        slide_images:
+          - holiday-club/20190731_132309.jpg
+          - holiday-club/20190801_090100.jpg
+          - holiday-club/dsc03358.jpg
+          - holiday-club/p1010302.jpg
+          - holiday-club/p1010326.jpg
+          - holiday-club/dsc01043.jpg
+        type: add_image
+        enabled: true
+      -
+        id: lbm00lg7
+        slide_images:
+          - kayaking/img-20210803-wa0002.jpg
+          - kayaking/img-20210604-wa0093.jpg
+          - kayaking/rectangle-53.jpg
+        type: add_image
+        enabled: true
+  -
     id: xD5Oe3Bx
     type: logo_marquee
     enabled: true
@@ -199,4 +225,5 @@ no_follow_links: false
 sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
+follow_us_title: 'Follow us on Instagram'
 ---

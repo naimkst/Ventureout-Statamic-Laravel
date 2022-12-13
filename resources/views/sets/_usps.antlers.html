@@ -1,36 +1,37 @@
 {{#
-	@name USPS Component
+@name USPS Component
 #}}
 <!-- Template: sets/usps -->
 <section class="relative overflow-hidden text-white bg-blue-900 py-14 lg:py-24 min-h-[400px] flex items-center">
     <img src="/img/mountain.png" alt="" class="absolute left-0 right-0 w-full h-auto -bottom-2">
 
     <div class="container relative h-full">
-        <div class="grid grid-cols-1 gap-10 mx-auto lg:grid-flow-col md:grid-cols-2 lg:grid-cols-none lg:auto-cols-fr xl:w-10/12">
+        <div
+            class="grid grid-cols-1 gap-10 mx-auto lg:grid-flow-col md:grid-cols-2 lg:grid-cols-none lg:auto-cols-fr xl:w-10/12">
             {{ block.usps scope="item" }}
-                <div class="space-y-2 text-center">
-                    {{ if item.icon }}
-                        <div class="flex items-center justify-center w-full h-24 mb-8">
-                            {{ responsive:item.icon class=" h-auto max-w-[160px]" }}
-                        </div>
-                    {{ /if }}
-
-                    {{ if item.title }}
-                    <p class="mb-4 h2 font-permanent text-mango-300">{{ item.title }}</p>
-                    {{ /if }}
-
-                    {{ if item.subtitle }}
-                    <p class="font-bold h4">{{ item.subtitle }}</p>
-                    {{ /if }}
-
-                    {{ if item.subtitle_2 }}
-                    <p class="font-medium text-blue-300 h4">{{ item.subtitle_2 }}</p>
-                    {{ /if }}
-
-                    {{ if item.description }}
-                    <p class="font-medium text-mango-300 small">{{ item.description }}</p>
-                    {{ /if }}
+            <div class="space-y-2 text-center">
+                {{ if item.icon }}
+                <div class="flex items-center justify-center w-full h-24 mb-8">
+                    {{ responsive:item.icon class=" h-auto max-w-[160px]" }}
                 </div>
+                {{ /if }}
+
+                {{ if item.title }}
+                <p class="mb-4 h2 font-permanent text-mango-300">{{ item.title }}</p>
+                {{ /if }}
+
+                {{ if item.subtitle }}
+                <p class="font-bold h4">{{ item.subtitle }}</p>
+                {{ /if }}
+
+                {{ if item.subtitle_2 }}
+                <p class="font-medium text-blue-300 h4">{{ item.subtitle_2 }}</p>
+                {{ /if }}
+
+                {{ if item.description }}
+                <p class="font-medium text-mango-300 small">{{ item.description }}</p>
+                {{ /if }}
+            </div>
             {{ /block.usps }}
         </div>
     </div>
