@@ -2435,6 +2435,11 @@ ol {
   padding-right: 1.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pt-\[76px\] {
   padding-top: 76px;
 }

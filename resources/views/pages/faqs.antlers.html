@@ -1,6 +1,6 @@
 {{ partial:components/hero }}
 
-<div class="flex flex-wrap gap-6 px-4 my-8">
+<div id="fixCat" class="flex flex-wrap gap-6 px-4 my-8 items-center py-3 w-full bg-white faq">
     {{ taxonomy from="faq_category" }}
     {{ $href = '#' + slug }}
     {{ partial src="components/buttons/secondary" :hrefs="$href" :text="title" }}
@@ -14,3 +14,13 @@
 </div>
 
 {{ partial:components/page_builder }}
+
+<style>
+    .fix-cat {
+        position: fixed;
+        background: #fff;
+        top: 40px;
+        left: 0;
+        z-index: 9;
+    }
+</style>

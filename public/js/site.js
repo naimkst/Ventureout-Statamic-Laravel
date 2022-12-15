@@ -8194,6 +8194,19 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('gallery', _components_gal
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"];
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start();
+addEventListener('scroll', function (event) {
+  console.log(window.scrollY);
+
+  if (window.scrollY >= 450) {
+    var d = document.getElementById('fixCat');
+    return d.classList.add('fix-cat');
+  }
+
+  if (window.scrollY < 450) {
+    var d = document.getElementById('fixCat');
+    return d.classList.remove('fix-cat');
+  }
+});
 
 /***/ }),
 
