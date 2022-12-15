@@ -3,9 +3,9 @@ sections:
     display: Main
     fields:
       -
-        handle: twitter
+        handle: youtube
         field:
-          display: Twitter
+          display: Youtube
           type: link
           icon: link
           listable: hidden

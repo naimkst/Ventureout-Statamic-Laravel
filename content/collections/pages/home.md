@@ -3,7 +3,7 @@ id: ae24f8f7-2bf9-46d9-b776-e111b7d0b957
 blueprint: home
 title: Home
 updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
-updated_at: 1670933202
+updated_at: 1671009289
 template: pages/home
 page_builder:
   -
@@ -150,12 +150,18 @@ page_builder:
         testimonial_author: 'Trip advisor Two'
         type: 'Add New'
         enabled: true
+      -
+        id: lbnfot3k
+        testimonial_description: '“My daughters attended a few days of the summer camp last year and had an amazing time! They really enjoyed all the activities, especially the kayaking. The staff are very experienced and are really good with all the kids. My daughters will definitely be back this half-term and also in the summer. Highly recommended for a fun and exciting alternative to the usual summers camps!!!”'
+        testimonial_author: 'Trip advisor Another'
+        type: 'Add New'
+        enabled: true
   -
     id: lbjk1axr
     follow_us_title: 'Follow us on Instagram'
     type: instagram
     enabled: true
-    account: '@instagram_acount'
+    account: instagram_acount
     instagram_image:
       -
         id: lblzo1x1
@@ -171,6 +177,14 @@ page_builder:
           - kayaking/img-20210803-wa0002.jpg
           - kayaking/img-20210604-wa0093.jpg
           - kayaking/rectangle-53.jpg
+        type: add_image
+        enabled: true
+      -
+        id: lbnfs018
+        slide_images:
+          - centre/20190730_130050.jpg
+          - centre/20210602_124351.jpg
+          - centre/overview.jpg
         type: add_image
         enabled: true
   -

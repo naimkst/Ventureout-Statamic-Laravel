@@ -15,7 +15,8 @@ preferences:
       columns:
         - title
         - slug
-        - articles_categories
-        - articles_tags
         - author
         - date
+        - categories
+        - image
+        - content
