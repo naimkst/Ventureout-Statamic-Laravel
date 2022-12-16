@@ -1367,6 +1367,18 @@ select {
   background-color: rgb(251 177 82 / var(--tw-bg-opacity));
 }
 
+.tag-secction strong {
+    position: relative;
+}
+
+.tag-secction strong::before {
+    width: 29px;
+    height: 30px;
+    content: url(/assets/icons/icon-download.svg);
+    position: absolute;
+    left: -27px;
+}
+
 
     [type='text'], 
     
@@ -2433,11 +2445,6 @@ ol {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pt-\[76px\] {

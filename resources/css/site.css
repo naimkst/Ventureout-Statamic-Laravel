@@ -67,3 +67,13 @@
         @apply bg-mango-300;
     }
 }
+.tag-secction strong {
+    position: relative;
+}
+.tag-secction strong::before {
+    width: 29px;
+    height: 30px;
+    content: url(/assets/icons/icon-download.svg);
+    position: absolute;
+    left: -27px;
+}

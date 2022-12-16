@@ -35,17 +35,30 @@ fields:
                   - orderedlist
                   - removeformat
                   - anchor
-                save_html: false
+                  - underline
+                  - image
+                  - code
+                  - codeblock
+                  - horizontalrule
+                  - h1
+                  - h2
+                  - h6
+                  - strikethrough
+                  - small
+                  - quote
+                  - superscript
+                  - subscript
+                save_html: true
                 toolbar_mode: fixed
                 link_noopener: false
                 link_noreferrer: false
-                target_blank: false
+                target_blank: true
                 reading_time: false
                 fullscreen: false
                 allow_source: true
                 enable_input_rules: true
                 enable_paste_rules: true
-                antlers: false
+                antlers: true
                 display: Content
                 type: bard
                 icon: bard
@@ -58,6 +71,9 @@ fields:
                 previews: true
                 remove_empty_nodes: false
                 collapse: false
+                link_collections:
+                  - resources
+                container: assets
             -
               handle: tabs_image
               field:
