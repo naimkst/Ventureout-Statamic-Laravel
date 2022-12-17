@@ -11,6 +11,7 @@
             {{ /if }}
 
             <div x-data="{ active: 1 }" class="space-y-6">
+                {{ partial src="components/buttons/secondary" :hrefs="$href" :text="title" }}
                 {{ $loop = 0 }}
                 {{ accordions }}
                 {{ $loop += 1 }}

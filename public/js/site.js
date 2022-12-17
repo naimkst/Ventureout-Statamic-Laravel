@@ -8193,20 +8193,17 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('heroSlider', _components_
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('gallery', _components_gallery__WEBPACK_IMPORTED_MODULE_10__["default"]); // Init
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"];
-alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start();
-addEventListener('scroll', function (event) {
-  console.log(window.scrollY);
-
-  if (window.scrollY >= 450) {
-    var d = document.getElementById('fixCat');
-    return d.classList.add('fix-cat');
-  }
-
-  if (window.scrollY < 450) {
-    var d = document.getElementById('fixCat');
-    return d.classList.remove('fix-cat');
-  }
-});
+alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start(); // addEventListener('scroll', (event) => {
+//     console.log(window.scrollY)
+//     if (window.scrollY >= 450) {
+//         var d = document.getElementById('fixCat')
+//         return d.classList.add('fix-cat')
+//     }
+//     if (window.scrollY < 450) {
+//         var d = document.getElementById('fixCat')
+//         return d.classList.remove('fix-cat')
+//     }
+// })
 
 /***/ }),
 
