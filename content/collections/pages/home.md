@@ -3,7 +3,7 @@ id: ae24f8f7-2bf9-46d9-b776-e111b7d0b957
 blueprint: home
 title: Home
 updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
-updated_at: 1671009289
+updated_at: 1671271015
 template: pages/home
 page_builder:
   -

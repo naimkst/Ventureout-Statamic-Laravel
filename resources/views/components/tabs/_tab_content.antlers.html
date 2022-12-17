@@ -1,14 +1,16 @@
 <section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
-    :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel" class="p-8 xl:p-14 rte rte--tab tag-secction">
+    :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel"
+    class="p-8 xl:p-14 rte rte--tab tag-secction">
     {{ content }}
 
     {{ if tabs_image }}
-
-    <div class="order-1 w-full mb-7 lg:w-5/12 lg:mb-0 lg:order-2 column">
-        {{ responsive:tabs_image class="w-full h-auto rounded-lg" }}
+    <div class="grid grid-cols-1 items-center gap-5 md:grid-cols-4">
+        {{ tabs_image }}
+        {{ responsive:url class="w-full rounded-lg h-[250px] object-cover" }}
+        {{ /tabs_image }}
     </div>
     {{ /if }}
     {{ if buttons }}
-    {{ partial src="components/buttons" style="primary" wrapperClass="mt-6 lg:mt-8" center="1" }}
+    {{ partial src="components/buttons" style="primary" wrapperClass="mt-6 lg:mt-8 tabButton" center="1" }}
     {{ /if }}
 </section>

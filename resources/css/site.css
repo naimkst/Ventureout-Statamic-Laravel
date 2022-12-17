@@ -77,3 +77,6 @@
     position: absolute;
     left: -27px;
 }
+.tabButton a {
+    text-decoration: none;
+}

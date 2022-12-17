@@ -1379,6 +1379,10 @@ select {
     left: -27px;
 }
 
+.tabButton a {
+    text-decoration: none;
+}
+
 
     [type='text'], 
     
@@ -1978,6 +1982,10 @@ ol {
 
 .h-24 {
   height: 6rem;
+}
+
+.h-\[250px\] {
+  height: 250px;
 }
 
 .min-h-screen {
@@ -2841,6 +2849,10 @@ ol {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:last\:col-span-2:last-child {

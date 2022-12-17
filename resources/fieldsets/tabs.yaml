@@ -36,29 +36,25 @@ fields:
                   - removeformat
                   - anchor
                   - underline
-                  - image
-                  - code
-                  - codeblock
                   - horizontalrule
                   - h1
                   - h2
                   - h6
-                  - strikethrough
                   - small
                   - quote
                   - superscript
                   - subscript
-                save_html: true
+                save_html: false
                 toolbar_mode: fixed
                 link_noopener: false
                 link_noreferrer: false
                 target_blank: true
                 reading_time: false
                 fullscreen: false
-                allow_source: true
-                enable_input_rules: true
-                enable_paste_rules: true
-                antlers: true
+                allow_source: false
+                enable_input_rules: false
+                enable_paste_rules: false
+                antlers: false
                 display: Content
                 type: bard
                 icon: bard
@@ -82,7 +78,6 @@ fields:
                 restrict: false
                 allow_uploads: true
                 show_filename: true
-                max_files: 1
                 display: 'Tabs Image'
                 type: assets
                 icon: assets

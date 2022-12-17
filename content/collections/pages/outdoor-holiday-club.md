@@ -43,7 +43,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
-updated_at: 1671110288
+updated_at: 1671271201
 page_builder:
   -
     id: YWimF17V
@@ -230,7 +230,26 @@ page_builder:
       -
         id: puBINHfP
         heading: Price
-        content: '<p>£35/day/child</p><p>no discounts for siblings or multiple weeks<br><br>No Childcare vouchers</p>'
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: £35/day/child
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'no discounts for siblings or multiple weeks'
+              -
+                type: hard_break
+              -
+                type: hard_break
+              -
+                type: text
+                text: 'No Childcare vouchers'
         type: tab
         enabled: true
         cta: 'Cta details'
@@ -249,7 +268,75 @@ page_builder:
       -
         id: 8inQZkEt
         heading: 'Outline of a week'
-        content: '<p>This is an outline of the week’s activities, but this timetable can change due to weather &amp; river levels - so no guarantee.</p><p>Please download and check the Parent information Booklet for better information.</p><p><strong>Monday</strong>: Icebreakers, Model raft race, archery, kayak games, pond dipping, bike games.<br><strong>Tuesday</strong>: Teamwork challenges, bike ride, canoeing games, climbing games.<br><strong>Wednesday</strong>: Woodland games (camouflage, capture the flag), Canoe &amp; kayak journey to Northenden.<br><strong>Thursday</strong>: Bushcraft: Shelter building, fire lighting, cordage.<br><strong>Friday</strong>: canoe games, climbing games, archery, circus skills, handicrafts.</p>'
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'This is an outline of the week’s activities, but this timetable can change due to weather & river levels - so no guarantee.'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Please download and check the Parent information Booklet for better information.'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: Monday
+                marks:
+                  -
+                    type: bold
+              -
+                type: text
+                text: ': Icebreakers, Model raft race, archery, kayak games, pond dipping, bike games.'
+              -
+                type: hard_break
+              -
+                type: text
+                text: Tuesday
+                marks:
+                  -
+                    type: bold
+              -
+                type: text
+                text: ': Teamwork challenges, bike ride, canoeing games, climbing games.'
+              -
+                type: hard_break
+              -
+                type: text
+                text: Wednesday
+                marks:
+                  -
+                    type: bold
+              -
+                type: text
+                text: ': Woodland games (camouflage, capture the flag), Canoe & kayak journey to Northenden.'
+              -
+                type: hard_break
+              -
+                type: text
+                text: Thursday
+                marks:
+                  -
+                    type: bold
+              -
+                type: text
+                text: ': Bushcraft: Shelter building, fire lighting, cordage.'
+              -
+                type: hard_break
+              -
+                type: text
+                text: Friday
+                marks:
+                  -
+                    type: bold
+              -
+                type: text
+                text: ': canoe games, climbing games, archery, circus skills, handicrafts.'
         type: tab
         enabled: true
         cta: 'Cta details'
@@ -268,7 +355,48 @@ page_builder:
       -
         id: bybfNVaZ
         heading: 'Who is it for?'
-        content: '<ul><li><p>Children that are sociable, like to run around in woods and don’t mind getting wet, muddy or falling down.</p></li><li><p>Boys and girls – some weeks there are more girls than boys, sometimes it’s the other way around. We work hard to make it inclusive and encouraging for both.</p></li><li><p>Year 3-7 for Summer Weeks (just finished those year groups and not about to go into them)</p></li><li><p>Year 4-7 for Easter and Whit week (May/June). Currently in those year groups.</p></li></ul><p></p>'
+        content:
+          -
+            type: bullet_list
+            content:
+              -
+                type: list_item
+                content:
+                  -
+                    type: paragraph
+                    content:
+                      -
+                        type: text
+                        text: 'Children that are sociable, like to run around in woods and don’t mind getting wet, muddy or falling down.'
+              -
+                type: list_item
+                content:
+                  -
+                    type: paragraph
+                    content:
+                      -
+                        type: text
+                        text: 'Boys and girls – some weeks there are more girls than boys, sometimes it’s the other way around. We work hard to make it inclusive and encouraging for both.'
+              -
+                type: list_item
+                content:
+                  -
+                    type: paragraph
+                    content:
+                      -
+                        type: text
+                        text: 'Year 3-7 for Summer Weeks (just finished those year groups and not about to go into them)'
+              -
+                type: list_item
+                content:
+                  -
+                    type: paragraph
+                    content:
+                      -
+                        type: text
+                        text: 'Year 4-7 for Easter and Whit week (May/June). Currently in those year groups.'
+          -
+            type: paragraph
         type: tab
         enabled: true
         cta: 'Cta details'
@@ -287,7 +415,13 @@ page_builder:
       -
         id: f1kQEfeE
         heading: 'What do they need to bring?'
-        content: '<p>asdg</p>'
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: asdg
         type: tab
         enabled: true
         cta: 'Cta details'
@@ -306,7 +440,20 @@ page_builder:
       -
         id: E1U9RrHF
         heading: Resources
-        content: '<p><a href="entry::1815dddc-ee0a-4758-b6ec-efc00951ebdb">Resources &amp; Downloads - Holiday club</a></p><p></p>'
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Resources & Downloads - Holiday club'
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'entry::1815dddc-ee0a-4758-b6ec-efc00951ebdb'
+          -
+            type: paragraph
         type: tab
         enabled: true
         cta: 'Cta details'
@@ -325,7 +472,6 @@ page_builder:
       -
         id: eRiT9nIJ
         heading: 'FAQ?'
-        content: '<p>F<a href="entry::01f5a4b2-b920-472c-b982-269190a20795">requently Asked Questions - Holiday Club</a></p><p><a target="_blank" href="#"><strong>This is download file link</strong></a></p><p><a target="_blank" href="#"><strong>Another download link</strong></a></p><p><a target="_blank" href="#">This is only a link</a></p><p><img src="statamic://asset::assets::holiday-club/20190801_090100.jpg" alt="aa"><img src="statamic://asset::assets::holiday-club/p1010327.jpg" alt="aaa"></p>'
         type: tab
         enabled: true
         cta: 'Cta details'
@@ -341,7 +487,60 @@ page_builder:
             enabled: true
         image: holiday-club/20190801_090100.jpg
         background_style: orange
-        tabs_image: holiday-club/dsc03358.jpg
+        tabs_image:
+          - holiday-club/dsc03358.jpg
+          - holiday-club/p1010302.jpg
+          - holiday-club/dsc01043.jpg
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: '#'
+                      rel: null
+                      target: null
+                      title: null
+                  -
+                    type: textColor
+                    attrs:
+                      color: 'rgb(0, 0, 0)'
+                text: F
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: '#'
+                      rel: null
+                      target: null
+                      title: null
+                  -
+                    type: textColor
+                    attrs:
+                      color: inherit
+                text: 'requently Asked Questions - Holiday Club'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: '#'
+                      rel: null
+                      target: _blank
+                      title: null
+                  -
+                    type: bold
+                text: 'Download Link Here..'
     type: tabs
     enabled: true
     cta: 'Here will be text'
