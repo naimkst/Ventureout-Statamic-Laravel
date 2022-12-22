@@ -41,26 +41,12 @@ sections:
           display: 'Phone Number'
           type: text
           icon: text
-          width: 50
           listable: hidden
           instructions_position: above
           visibility: visible
           always_save: false
           validate:
             - required
-      -
-        handle: postcode
-        field:
-          input_type: text
-          antlers: false
-          display: Postcode
-          type: text
-          icon: text
-          width: 50
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
       -
         handle: message
         field:

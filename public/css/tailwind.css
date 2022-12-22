@@ -1383,6 +1383,10 @@ select {
     text-decoration: none;
 }
 
+.eapps-instagram-feed-title-container {
+    display: none;
+}
+
 
     [type='text'], 
     
@@ -1762,6 +1766,10 @@ ol {
 
 .col-span-3 {
   grid-column: span 3 / span 3;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .my-14 {
@@ -2362,6 +2370,11 @@ ol {
   background-color: rgb(26 35 52 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -2858,6 +2871,14 @@ ol {
   .md\:last\:col-span-2:last-child {
     grid-column: span 2 / span 2;
   }
+
+  .md\:last\:col-span-3:last-child {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:last\:col-span-1:last-child {
+    grid-column: span 1 / span 1;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -3082,5 +3103,37 @@ ol {
     border-top-right-radius: 0.75rem;
     border-bottom-right-radius: 0.75rem;
   }
+}
+
+.\[\&\>\*\:nth-child\(odd\)\]\:bg-red-500>*:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.\[\&\>\*\:nth-child\(3\)\]\:col-span-2>*:nth-child(3) {
+  grid-column: span 2 / span 2;
+}
+
+.\[\&\>\*\:nth-child\(3\)\]\:bg-red-500>*:nth-child(3) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.\[\&\>\*\:nth-child\(1\)\]\:col-span-2>*:nth-child(1) {
+  grid-column: span 2 / span 2;
+}
+
+.\[\&\>\*\:nth-child\(1\)\]\:col-span-1>*:nth-child(1) {
+  grid-column: span 1 / span 1;
+}
+
+.\[\&\>\*\:nth-child\(2\)\]\:bg-red-500>*:nth-child(2) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.\[\&\>\*\:nth-child\(\)\]\:bg-red-500>*:nth-child() {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 

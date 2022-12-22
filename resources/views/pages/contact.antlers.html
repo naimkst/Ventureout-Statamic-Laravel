@@ -47,7 +47,8 @@
             {{ /if }}
 
             {{ fields }}
-            <div class="col-span-2 mb-5 md:col-span-1 md:last:col-span-2">
+            <div
+                class="col-span-2 mb-5 md:last:col-span-2 {{ if index == 2 }} md:col-span-2 {{else}}md:col-span-1  {{/endif }}">
                 <label>
                     {{ display }}
                     {{ if validate | contains:required }}
