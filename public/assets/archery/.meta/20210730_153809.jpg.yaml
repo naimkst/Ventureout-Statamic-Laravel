@@ -1,6 +1,8 @@
-data: {  }
+data:
+  imageoptimizer:
+    original_size: 1542363
 size: 1542363
-last_modified: 1666176637
+last_modified: 1671218943
 width: 4000
 height: 2252
 mime_type: image/jpeg

@@ -4,8 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d134a9a9cf4aded02b69520019fd3a8c",
+    "content-hash": "697de3e89c99fa460785346804de4306",
     "packages": [
+        {
+            "name": "4rn0/statamic-v3-image-optimizer",
+            "version": "v1.0.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/4rn0/statamic-v3-image-optimizer.git",
+                "reference": "6326d8061b1165d4ad6455d807d22110612a624a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/4rn0/statamic-v3-image-optimizer/zipball/6326d8061b1165d4ad6455d807d22110612a624a",
+                "reference": "6326d8061b1165d4ad6455d807d22110612a624a",
+                "shasum": ""
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic v3 Image Optimizer",
+                    "description": "Statamic v3 Image Optimizer addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "Arnohoogma\\StatamicImageOptimizer\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Arnohoogma\\StatamicImageOptimizer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Arno Hoogma"
+                }
+            ],
+            "description": "Statamic v3 Image Optimizer addon",
+            "support": {
+                "email": "arno@hoog.ma",
+                "source": "https://github.com/4rn0/statamic-v3-image-optimizer/tree/v1.0.20"
+            },
+            "time": "2022-11-05T14:32:59+00:00"
+        },
         {
             "name": "ajthinking/archetype",
             "version": "v1.1.5",
