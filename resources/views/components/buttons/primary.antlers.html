@@ -10,11 +10,10 @@
 ) }}
 
 <!-- Template: components/button/primary -->
-
 <{{ type or 'a' }}
-    class="hover:bg-opacity-90 font-sm font-medium pt-3 pb-2.5 px-6 inline-flex rounded-full transition {{ class }}" {{
-    if subtype && type !='a' }} type="{{ subtype }}" {{ /if }} {{ if href || hrefs }} href="{{ href || hrefs }}" {{ /if
-    }} {{ if target | contains: 'http' }} target="_blank" {{ /if }} {{ if hrefs || href | contains: 'http' }}
+    class="hover:bg-opacity-90 font-sm font-medium pt-3 pb-2.5 px-6 inline-flex rounded-full transition {{ class }} {{ classList }}"
+    {{ if subtype && type !='a' }} type="{{ subtype }}" {{ /if }} {{ if href || hrefs }} href="{{ href || hrefs }}" {{
+    /if }} {{ if target | contains: 'http' }} target="_blank" {{ /if }} {{ if hrefs || href | contains: 'http' }}
     rel="noopener noreferrer" {{ /if }}>
     {{ text }}
 </{{ type or 'a' }}>

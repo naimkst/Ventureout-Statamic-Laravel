@@ -13,7 +13,7 @@
     {{ partial:components/navigation/desktop }}
 
     {{ partial:components/buttons/primary :href="header.book_now_link" text="Contact Us" class="flex-shrink-0 hidden
-    uppercase small sm:block" }}
+    uppercase small" classList="flex-shrink-0 hidden uppercase small md:block" }}
 
     <button type="button" x-on:click="toggleNav" class="ml-4 lg:hidden">
         <svg x-show="!showNav" class="w-8 h-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
