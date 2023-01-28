@@ -1,13 +1,13 @@
 {{#
-	@name Text with Image
-	@desc Set used for text with image. Image can be aligned right or left.
+@name Text with Image
+@desc Set used for text with image. Image can be aligned right or left.
 #}}
 <!-- Template: sets/text_with_image -->
 <section class="container my-10 lg:my-20">
     <div class="flex flex-wrap justify-between row">
         <div class="w-full lg:w-6/12 column {{ block.image_alignment == 'left' ? 'order-1 lg:order-2' : '' }}">
             {{ if heading }}
-                <h2 class="mb-6 font-permanent text-mango h2">{{ block.heading }}</h2>
+            <h2 class="mb-6 font-permanent text-mango h2">{{ block.heading }}</h2>
             {{ /if }}
 
             <div class="rte">
@@ -15,19 +15,20 @@
             </div>
 
             {{ if block.buttons }}
-                {{ partial src="components/buttons" style="secondary" wrapperClass="mt-6 lg:mt-8"  }}
+            {{ partial src="components/buttons" style="secondary" wrapperClass="mt-6 lg:mt-8" }}
             {{ /if }}
         </div>
 
-        <div class="w-full pt-10 lg:w-5/12 lg:pt-20 column {{ block.image_alignment == 'left' ? 'order-2 lg:order-1' : '' }}">
+        <div
+            class="w-full pt-10 lg:w-5/12 lg:pt-20 column {{ block.image_alignment == 'left' ? 'order-2 lg:order-1' : '' }}">
             {{ if block.image }}
-                {{ responsive:block.image class="w-full h-auto rounded-lg" }}
+            {{ responsive:block.image class="w-full h-auto rounded-lg" loading='lazy'}}
             {{ /if }}
 
             {{ if block.image_caption }}
-                <p class="mt-5 text-xs text-right uppercase text-blue">
-                    {{ block.image_caption }}
-                </p>
+            <p class="mt-5 text-xs text-right uppercase text-blue">
+                {{ block.image_caption }}
+            </p>
             {{ /if }}
         </div>
     </div>

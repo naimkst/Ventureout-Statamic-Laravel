@@ -6,7 +6,7 @@
     {{ if tabs_image }}
     <div class="grid grid-cols-1 items-center gap-5 md:grid-cols-4">
         {{ tabs_image }}
-        {{ responsive:url class="w-full rounded-lg h-[250px] object-cover" }}
+        {{ responsive:url class="w-full rounded-lg h-[250px] object-cover" loading='lazy'}}
         {{ /tabs_image }}
     </div>
     {{ /if }}

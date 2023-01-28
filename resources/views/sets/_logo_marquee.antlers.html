@@ -6,7 +6,7 @@
 <section class="relative overflow-hidden my-14 lg:my-24">
     <div class="inline-flex max-w-full py-3 space-x-12 marquee whitespace-nowrap" x-data="marquee({speed: 0.5, dynamicWidthElements: true })">
         {{ logo_marquee.logos }}
-            <img src="{{ url }}" alt="{{ alt }}" />
+            <img src="{{ url }}" alt="{{ alt }}" loading='lazy'/>
         {{ /logo_marquee.logos }}
     </div>
 </section>
