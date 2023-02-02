@@ -3,7 +3,7 @@ id: ae24f8f7-2bf9-46d9-b776-e111b7d0b957
 blueprint: home
 title: Home
 updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
-updated_at: 1671701268
+updated_at: 1675366368
 template: pages/home
 page_builder:
   -
@@ -227,34 +227,34 @@ slides:
     id: 7ODBS3sp
     kicker: 'adventures for all – individuals, families, friends, schools & youth groups.'
     heading: 'Canoe, kayak & paddleboard'
-    image: canoeing/20190410_144704.jpg
     type: slide
     enabled: false
-    slider_video: 'https://player.vimeo.com/video/779234463?autoplay=1&title=0&byline=0&portrait=0&loop=1&muted=1'
+    slider_video: 'https://www.youtube.com/embed/660ru0fJ7Jg?playlist=660ru0fJ7Jg'
+    slider_media: video
   -
     id: hyQsh2NR
     kicker: 'KS2 & 3 Classes of 10 to 60'
     heading: 'School activity days'
-    image: teambuilding/20220621_100537.jpg
     type: slide
     enabled: true
-    slider_video: 'https://player.vimeo.com/video/779234463?autoplay=1&title=0&byline=0&portrait=0&loop=1&muted=1'
+    slider_video: 'https://www.youtube.com/embed/660ru0fJ7Jg?playlist=660ru0fJ7Jg'
+    slider_media: video
   -
     id: hmkdEFVo
     kicker: 'Safe, Enjoyable & Challenging experiences – Thanks to our qualified, experienced staff'
     heading: 'Venture Out Holiday Clubs'
-    image: environmental-studies/p1010229.jpg
     type: slide
     enabled: true
-    slider_video: 'https://player.vimeo.com/video/779234463?autoplay=1&title=0&byline=0&portrait=0&loop=1&muted=1'
+    slider_video: 'https://www.youtube.com/embed/660ru0fJ7Jg?playlist=660ru0fJ7Jg'
+    slider_media: video
   -
     id: 4biJWWKN
     kicker: 'The Great Outdoors in Greater Manchester – Explore the North West and Peak District'
     heading: 'Venture Out kayaking'
-    image: kayaking/voexp-(43).jpg
     type: slide
     enabled: true
-    slider_video: 'https://player.vimeo.com/video/779234463?autoplay=1&title=0&byline=0&portrait=0&loop=1&muted=1'
+    slider_video: 'https://www.youtube.com/embed/660ru0fJ7Jg?playlist=660ru0fJ7Jg'
+    slider_media: video
 meta_title: 'Venture Out'
 use_meta_keywords: false
 no_index_page: false
