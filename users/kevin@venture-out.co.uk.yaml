@@ -1,5 +1,6 @@
 roles:
   - admin
+super: true
 id: 115d3974-8cac-461e-9579-c5775a2031e7
 password_hash: $2y$10$V2c6HiCsX3Zradebu5Lb8OhcPB3vfKx9.DbFh2VugzDzTYJC2Snfi
 preferences:

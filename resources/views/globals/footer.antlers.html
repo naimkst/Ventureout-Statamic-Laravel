@@ -69,47 +69,33 @@
 
             <div class="col-span-6 lg:col-span-3">
                 <h4 class="mb-4 font-permanent">Subscribe!</h4>
-                {{ form:subscribe }}
-                {{ if success }}
-                <div class="px-4 py-3 text-black rounded-lg bg-mango">
-                    {{ success }}
-                </div>
-                {{ else }}
-
-                <div class="">
-                    {{ if errors }}
-                    <div class="col-span-2 px-4 py-3 mb-2 text-white bg-red-300 rounded-lg p">
-                        {{ errors }}
-                        {{ value }}<br>
-                        {{ /errors }}
-                    </div>
-                    {{ /if }}
-
-                    {{ fields }}
-                    <div class="mb-3 newsletter-field">
-                        <div>{{ field }}</div>
-
-                        {{ if error }}
-                        <p class="italic text-white small">{{ error }}</p>
-                        {{ /if }}
-                    </div>
-                    {{ /fields }}
+                <div id="mc_embed_signup">
+                    <form id="subscribe-form"
+                        action="https://venture-out.us5.list-manage.com/subscribe/post?u=2fc8b2ec1fa6ec6d34ed31f1c&amp;id=4aae6a8b34&amp;v_id=3185&amp;f_id=006eedebf0"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                        target="_self">
+                        <div id="mc_embed_signup_scroll">
+                            <div class="mb-3 newsletter-field">
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required
+                                    placeholder="Email address">
+                            </div>
+                            <div class="text-right">
+                                {{ partial:components/buttons/primary
+                                color="orange"
+                                type="button"
+                                subtype="submit"
+                                text="Subscribe"
+                                class="justify-center w-full subscribe-button"
+                                }}
+                            </div>
+                        </div>
+                    </form>
+                    <p class="subscribeSuccss"></p>
                 </div>
 
-                <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
-
-                <div class="text-right">
-                    {{ partial:components/buttons/primary
-                    color="orange"
-                    type="button"
-                    subtype="submit"
-                    text="Subscribe"
-                    class="justify-center w-full"
-                    }}
-                </div>
-                {{ /if }}
-                {{ /form:subscribe }}
             </div>
+
+
         </div>
 
         {{ if footer.copyright_text }}
@@ -117,3 +103,28 @@
         {{ /if }}
     </div>
 </footer>
+
+<script type="text/javascript">
+    const form = document.getElementById('subscribe-form');
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        var form = document.querySelector("#subscribe-form");
+        var formData = new FormData(form);
+        var serializedData = new URLSearchParams(formData).toString();
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://venture-out.us5.list-manage.com/subscribe/post?u=2fc8b2ec1fa6ec6d34ed31f1c&id=4aae6a8b34&c=?");
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+            if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                document.querySelector('.subscribeSuccss').innerHTML = 'Thank you for subscribing!';
+            }
+            else {
+                document.querySelector('.subscribeSuccss').innerHTML = 'Thank you for subscribing!';
+            }
+        };
+        xhr.send(serializedData);
+
+    });
+</script>

@@ -29,16 +29,3 @@ Alpine.data('gallery', gallery)
 window.Alpine = Alpine
 
 Alpine.start()
-
-// addEventListener('scroll', (event) => {
-//     console.log(window.scrollY)
-
-//     if (window.scrollY >= 450) {
-//         var d = document.getElementById('fixCat')
-//         return d.classList.add('fix-cat')
-//     }
-//     if (window.scrollY < 450) {
-//         var d = document.getElementById('fixCat')
-//         return d.classList.remove('fix-cat')
-//     }
-// })
