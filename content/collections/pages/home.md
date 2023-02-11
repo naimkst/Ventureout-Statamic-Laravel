@@ -3,9 +3,16 @@ id: ae24f8f7-2bf9-46d9-b776-e111b7d0b957
 blueprint: home
 title: Home
 updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
-updated_at: 1675366368
+updated_at: 1676148023
 template: pages/home
 page_builder:
+  -
+    id: le0eqdfg
+    kicker: 'The Great Outdoors in Greater Manchester'
+    heading: 'Safe, Enjoyable & Challenging experiences – Thanks to our qualified, experienced staff'
+    image: kayaking/img-20210803-wa0002.jpg
+    type: hero_image
+    enabled: true
   -
     id: Vvw83Jk2
     content:
@@ -222,39 +229,6 @@ page_builder:
     heading: 'Venture Out News'
     type: recent_news
     enabled: true
-slides:
-  -
-    id: 7ODBS3sp
-    kicker: 'adventures for all – individuals, families, friends, schools & youth groups.'
-    heading: 'Canoe, kayak & paddleboard'
-    type: slide
-    enabled: false
-    slider_video: 'https://www.youtube.com/embed/660ru0fJ7Jg?playlist=660ru0fJ7Jg'
-    slider_media: video
-  -
-    id: hyQsh2NR
-    kicker: 'KS2 & 3 Classes of 10 to 60'
-    heading: 'School activity days'
-    type: slide
-    enabled: true
-    slider_video: 'https://www.youtube.com/embed/660ru0fJ7Jg?playlist=660ru0fJ7Jg'
-    slider_media: video
-  -
-    id: hmkdEFVo
-    kicker: 'Safe, Enjoyable & Challenging experiences – Thanks to our qualified, experienced staff'
-    heading: 'Venture Out Holiday Clubs'
-    type: slide
-    enabled: true
-    slider_video: 'https://www.youtube.com/embed/660ru0fJ7Jg?playlist=660ru0fJ7Jg'
-    slider_media: video
-  -
-    id: 4biJWWKN
-    kicker: 'The Great Outdoors in Greater Manchester – Explore the North West and Peak District'
-    heading: 'Venture Out kayaking'
-    type: slide
-    enabled: true
-    slider_video: 'https://www.youtube.com/embed/660ru0fJ7Jg?playlist=660ru0fJ7Jg'
-    slider_media: video
 meta_title: 'Venture Out'
 use_meta_keywords: false
 no_index_page: false
@@ -263,4 +237,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 follow_us_title: 'Follow us on Instagram'
+kicker: 'adventures for all – individuals, families, friends, schools & youth groups.'
+heading: 'Canoe, kayak & paddleboard'
+image: kayaking/img-20210803-wa0002.jpg
 ---
