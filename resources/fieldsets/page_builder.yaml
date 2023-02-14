@@ -5,11 +5,6 @@ fields:
     field:
       collapse: false
       sets:
-        hero_image:
-          display: 'Hero Without Slider'
-          fields:
-            -
-              import: hero_image
         text:
           display: Text
           fields:

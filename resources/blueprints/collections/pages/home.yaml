@@ -12,7 +12,7 @@ sections:
           validate:
             - required
       -
-        import: hero_slider
+        import: hero
       -
         import: page_builder
   sidebar:

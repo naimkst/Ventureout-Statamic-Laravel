@@ -22,6 +22,11 @@ fields:
           fields:
             -
               import: hero_slider
+        hero_image:
+          display: 'Hero Without Slider'
+          fields:
+            -
+              import: hero_image
       display: Hero
       type: replicator
       icon: replicator

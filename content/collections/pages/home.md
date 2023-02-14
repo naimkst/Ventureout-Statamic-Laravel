@@ -3,16 +3,9 @@ id: ae24f8f7-2bf9-46d9-b776-e111b7d0b957
 blueprint: home
 title: Home
 updated_by: 998e47b6-651e-4252-b7ed-565ea3f20a95
-updated_at: 1676148023
+updated_at: 1676350777
 template: pages/home
 page_builder:
-  -
-    id: le0eqdfg
-    kicker: 'The Great Outdoors in Greater Manchester'
-    heading: 'Safe, Enjoyable & Challenging experiences – Thanks to our qualified, experienced staff'
-    image: kayaking/img-20210803-wa0002.jpg
-    type: hero_image
-    enabled: true
   -
     id: Vvw83Jk2
     content:
@@ -240,4 +233,12 @@ follow_us_title: 'Follow us on Instagram'
 kicker: 'adventures for all – individuals, families, friends, schools & youth groups.'
 heading: 'Canoe, kayak & paddleboard'
 image: kayaking/img-20210803-wa0002.jpg
+hero:
+  -
+    id: le3ryogs
+    kicker: 'The Great Outdoors in Greater Manchester'
+    heading: 'Safe, Enjoyable & Challenging experiences – Thanks to our qualified, experienced staff'
+    image: kayaking/img-20210803-wa0002.jpg
+    type: hero_image
+    enabled: true
 ---
